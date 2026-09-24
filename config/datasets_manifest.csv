@@ -1,0 +1,10 @@
+accession,role,tissue_or_context,origin_of_listing,status,geo_n_samples_2026-09,donors_verified,notes
+GSE178360,candidate,lung,listed in the Bioinformatics 2025 conformal scRNA paper,GEO record confirmed; not downloaded,3,,3 samples: TOO FEW donors for donor-level calibration
+GSE127465,candidate,lung cancer (human+mouse),same paper,GEO record confirmed; not downloaded,40,,40 samples include mouse; human patient count unread; likely still small
+GSE84133,candidate,pancreas (human+mouse),same paper,GEO record confirmed; not downloaded,6,,TOO FEW donors
+GSE180878,candidate,breast,same paper,GEO record confirmed; not downloaded,16,,16 samples; donors unread; borderline
+GSE165816,composition case study only,diabetic foot ulcer skin,web search 2026-09,GEO record confirmed; not downloaded,54,,54 samples; healer/non-healer labels; donor count unread; optional second tissue
+TO_IDENTIFY,target: healthy gingiva,gingiva,none yet,NOT IDENTIFIED,,,search GEO/CELLxGENE; require >=8 donors and author cell-type labels
+TO_IDENTIFY,target: periodontitis,gingiva,none yet,NOT IDENTIFIED,,,earlier suite GEO query returned candidates only; suitability not reviewed
+TO_IDENTIFY,target: oral cancer / OPMD,oral mucosa,none yet,NOT IDENTIFIED,,,require independent author-assigned cell types
+CELLxGENE Census,candidate multi-donor reference,many tissues,general knowledge,UNVERIFIED,,,best route to >=30-donor reference/calibration sets; record census version and per-donor counts

@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+pandas>=2.0
+pytest>=8
+# optional, only for scripts/prepare_inputs.py with .h5ad files
+# anndata>=0.10

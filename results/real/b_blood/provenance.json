@@ -1,0 +1,61 @@
+{
+  "simulation_only": false,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-21T08:08:43Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "name": "b_blood",
+    "sets": [
+      "blood_A",
+      "blood_B",
+      "blood_C"
+    ],
+    "scheme": "blood_fine",
+    "permute_roles": true,
+    "n_ref": 30,
+    "n_cal": 30,
+    "n_tgt": 30,
+    "min_cells": 100,
+    "min_donors": 5,
+    "ks": [
+      3,
+      6
+    ],
+    "reps": 30,
+    "alpha": 0.1,
+    "embeddings": [
+      "emb_tf-sapiens",
+      "emb_tf-exemplar-human",
+      "emb_scvi"
+    ]
+  },
+  "exploratory": true,
+  "data": {
+    "classes": [
+      "B",
+      "CD4_T",
+      "CD8_T",
+      "NK",
+      "mono_classical",
+      "mono_nonclassical"
+    ],
+    "per_set": {
+      "blood_A": {
+        "cells": 12000,
+        "kept": 11579,
+        "donors": 80
+      },
+      "blood_B": {
+        "cells": 12000,
+        "kept": 10049,
+        "donors": 80
+      },
+      "blood_C": {
+        "cells": 12000,
+        "kept": 11663,
+        "donors": 80
+      }
+    }
+  }
+}

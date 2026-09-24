@@ -1,0 +1,38 @@
+✓ Initialized. View run at 
+https://modal.com/apps/pradeepaiperio/main/ap-p9GUfYGpF61tBH9FBhWOrw
+✓ Created objects.
+├── 🔨 Created mount D:\pending work\bioinformatics - top 
+│   q1\donorconf\modal\modal_census.py
+├── 🔨 Created function probe.
+├── 🔨 Created function inspect_counts.
+├── 🔨 Created function survey.
+├── 🔨 Created function embedding_api.
+└── 🔨 Created function pull.
+/root/modal_census.py:201: FutureWarning: The argument `column_names` is deprecated and will be removed in a future release. Please use `obs_column_names` and `var_column_names` instead.
+  ad = cc.get_anndata(census, organism="Homo sapiens", obs_coords=sub.soma_joinid.to_numpy(),
+/usr/local/lib/python3.11/functools.py:909: ImplicitModificationWarning: Transforming to str index.
+  return dispatch(args[0].__class__)(*args, **kw)
+/usr/local/lib/python3.11/functools.py:909: ImplicitModificationWarning: Transforming to str index.
+  return dispatch(args[0].__class__)(*args, **kw)
+{
+  "tag": "oral_scc",
+  "dataset_id": "55ca4411-8c7d-4aef-a572-50852e030c05",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 28186,
+  "n_donors_in_dataset": 12,
+  "n_donors_kept": 12,
+  "n_cells_kept": 3460,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 300,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 7
+}
+Stopping app - local entrypoint completed.
+[modal-client] 2026-09-21T06:17:15+0000 Detected 2 background thread(s) [ThreadPoolExecutor-0_0, ThreadPoolExecutor-0_1] still running after container exit. This will prevent runner shutdown for up to 30 seconds.
+✓ App completed. View run at 
+https://modal.com/apps/pradeepaiperio/main/ap-p9GUfYGpF61tBH9FBhWOrw

@@ -1,0 +1,457 @@
+{
+  "census_version_requested": "stable",
+  "census_info": {
+    "census_schema_version": "2.4.0",
+    "census_build_date": "2025-11-08",
+    "dataset_schema_version": "7.0.0",
+    "total_cell_count": "217768036",
+    "unique_cell_count": "125463259"
+  },
+  "oral_like_tissue_labels": [
+    "anterior part of tongue",
+    "buccal mucosa",
+    "dental pulp",
+    "gingiva",
+    "hard palate",
+    "minor salivary gland",
+    "mucosa of dorsum of tongue",
+    "mucosa of lip",
+    "oral cavity",
+    "oropharynx",
+    "periodontium",
+    "posterior part of tongue",
+    "saliva",
+    "salivary gland epithelium",
+    "soft palate",
+    "tongue",
+    "tonsil"
+  ],
+  "oral_like_tissue_cell_counts": {
+    "anterior part of tongue": 43968,
+    "buccal mucosa": 205968,
+    "dental pulp": 108452,
+    "gingiva": 398609,
+    "hard palate": 27546,
+    "minor salivary gland": 98173,
+    "mucosa of dorsum of tongue": 16832,
+    "mucosa of lip": 6588,
+    "oral cavity": 28186,
+    "oropharynx": 82844,
+    "periodontium": 10329,
+    "posterior part of tongue": 71805,
+    "saliva": 14502,
+    "salivary gland epithelium": 15796,
+    "soft palate": 2601,
+    "tongue": 489,
+    "tonsil": 115963
+  },
+  "n_rows": 140,
+  "oral_like_datasets": [
+    {
+      "group": "oral_like",
+      "dataset_id": "9fcb0b73-c734-40a5-be9c-ace7eea401c9",
+      "n_cells": 105918,
+      "n_donors": 34,
+      "n_cell_types": 27,
+      "tissues": "gingiva",
+      "diseases": "gingivitis; normal; periodontitis",
+      "assays": "10x 3' v2; 10x 3' v3"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "cb252df6-6e49-4553-abd1-495a00006fb1",
+      "n_cells": 58392,
+      "n_donors": 17,
+      "n_cell_types": 10,
+      "tissues": "dental pulp; hard palate; minor salivary gland; mucosa of lip",
+      "diseases": "normal",
+      "assays": "10x 3' v2; 10x 3' v3"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "55ca4411-8c7d-4aef-a572-50852e030c05",
+      "n_cells": 28186,
+      "n_donors": 12,
+      "n_cell_types": 7,
+      "tissues": "oral cavity",
+      "diseases": "oral cavity squamous cell carcinoma",
+      "assays": "10x 3' v3"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "9dbab10c-118d-496b-966a-67f1763a6b7d",
+      "n_cells": 14502,
+      "n_donors": 11,
+      "n_cell_types": 13,
+      "tissues": "saliva",
+      "diseases": "COVID-19",
+      "assays": "10x 3' v3"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "b6b5ea88-e092-46e4-b9c5-e93b52d5c195",
+      "n_cells": 82844,
+      "n_donors": 10,
+      "n_cell_types": 15,
+      "tissues": "oropharynx",
+      "diseases": "normal; oropharynx squamous cell carcinoma",
+      "assays": "10x 3' v3"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "44882825-0da1-4547-b721-2c6105d4a9d1",
+      "n_cells": 28279,
+      "n_donors": 7,
+      "n_cell_types": 20,
+      "tissues": "tonsil",
+      "diseases": "normal",
+      "assays": "10x 3' v2; 10x 5' v1"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "7970bd6b-f752-47a9-8643-2af16855ec49",
+      "n_cells": 21595,
+      "n_donors": 7,
+      "n_cell_types": 2,
+      "tissues": "tonsil",
+      "diseases": "normal",
+      "assays": "10x 3' v2; 10x 5' v1"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "53d208b0-2cfd-4366-9866-c3c6114081bc",
+      "n_cells": 39056,
+      "n_donors": 6,
+      "n_cell_types": 29,
+      "tissues": "anterior part of tongue; buccal mucosa; posterior part of tongue; tongue",
+      "diseases": "normal",
+      "assays": "10x 3' v3; Smart-seq2"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "bdd109f1-ca27-45dc-bb9f-473008449428",
+      "n_cells": 6560,
+      "n_donors": 4,
+      "n_cell_types": 13,
+      "tissues": "dental pulp",
+      "diseases": "enamel caries; normal; pulpitis",
+      "assays": "10x 3' v2"
+    },
+    {
+      "group": "oral_like",
+      "dataset_id": "6725ee8e-ef5b-4e68-8901-61bd14a1fe73",
+      "n_cells": 15796,
+      "n_donors": 2,
+      "n_cell_types": 5,
+      "tissues": "salivary gland epithelium",
+      "diseases": "normal",
+      "assays": "10x 3' v3"
+    }
+  ],
+  "top_datasets_by_donors": {
+    "blood": [
+      {
+        "group": "blood",
+        "dataset_id": "3faad104-2ab8-4434-816d-474d8d2641db",
+        "n_cells": 1248980,
+        "n_donors": 981,
+        "n_cell_types": 29,
+        "tissues": "blood",
+        "diseases": "normal",
+        "assays": "10x 3' v2"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "c838aec3-03ef-4398-b882-0e3912abfff0",
+        "n_cells": 1265624,
+        "n_donors": 625,
+        "n_cell_types": 32,
+        "tissues": "blood",
+        "diseases": "normal",
+        "assays": "10x 5' v2"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "218acb0f-9f2f-4f76-b90b-15a4b7c7f629",
+        "n_cells": 1263676,
+        "n_donors": 261,
+        "n_cell_types": 11,
+        "tissues": "blood",
+        "diseases": "normal; systemic lupus erythematosus",
+        "assays": "10x 3' v2"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "9dbab10c-118d-496b-966a-67f1763a6b7d",
+        "n_cells": 1399186,
+        "n_donors": 182,
+        "n_cell_types": 13,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal",
+        "assays": "10x 3' v3; 10x 5' v2"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "d9f3a82c-24bb-4277-b715-8ec92a33dd32",
+        "n_cells": 495763,
+        "n_donors": 132,
+        "n_cell_types": 9,
+        "tissues": "blood",
+        "diseases": "hematologic disorder; myelodysplastic syndrome; myelodysplastic/myeloproliferative disease; normal",
+        "assays": "10x 3' v3"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "ebc2e1ff-c8f9-466a-acf4-9d291afaf8b3",
+        "n_cells": 836148,
+        "n_donors": 124,
+        "n_cell_types": 17,
+        "tissues": "blood",
+        "diseases": "COVID-19; influenza; normal",
+        "assays": "10x 5' v1"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "c7775e88-49bf-4ba2-a03b-93f00447c958",
+        "n_cells": 647366,
+        "n_donors": 120,
+        "n_cell_types": 46,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal; respiratory system disorder",
+        "assays": "10x 3' transcription profiling"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "4a5b00e0-1ba3-4fd4-af89-d3512eb20720",
+        "n_cells": 516121,
+        "n_donors": 107,
+        "n_cell_types": 9,
+        "tissues": "blood",
+        "diseases": "hematologic disorder; myelodysplastic syndrome; myelodysplastic/myeloproliferative disease; normal",
+        "assays": "10x 3' v3"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "01ad3cd7-3929-4654-84c0-6db05bd5fd59",
+        "n_cells": 600929,
+        "n_donors": 80,
+        "n_cell_types": 11,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal; respiratory system disorder",
+        "assays": "10x 5' transcription profiling"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "2a498ace-872a-4935-984b-1afa70fd9886",
+        "n_cells": 339597,
+        "n_donors": 69,
+        "n_cell_types": 30,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal; post-COVID-19 disorder",
+        "assays": "10x 5' v1"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "21d3e683-80a4-4d9b-bc89-ebb2df513dde",
+        "n_cells": 246964,
+        "n_donors": 46,
+        "n_cell_types": 14,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal",
+        "assays": "10x 5' v1"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "30cd5311-6c09-46c9-94f1-71fe4b91813c",
+        "n_cells": 125117,
+        "n_donors": 46,
+        "n_cell_types": 10,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal",
+        "assays": "10x 5' v1"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "5e717147-0f75-4de1-8bd2-6fda01b8d75f",
+        "n_cells": 90957,
+        "n_donors": 39,
+        "n_cell_types": 22,
+        "tissues": "blood",
+        "diseases": "COVID-19; normal",
+        "assays": "10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "d18736c3-6292-4379-919a-d6d973204c87",
+        "n_cells": 108717,
+        "n_donors": 36,
+        "n_cell_types": 15,
+        "tissues": "blood",
+        "diseases": "normal; rheumatoid arthritis",
+        "assays": "10x 3' v3"
+      },
+      {
+        "group": "blood",
+        "dataset_id": "19e46756-9100-4e01-8b0e-23b557558a4c",
+        "n_cells": 66985,
+        "n_donors": 24,
+        "n_cell_types": 9,
+        "tissues": "blood",
+        "diseases": "clonal hematopoiesis; normal",
+        "assays": "10x 3' v3"
+      }
+    ],
+    "lung": [
+      {
+        "group": "lung",
+        "dataset_id": "9f222629-9e39-47d0-b83f-e08d610c7479",
+        "n_cells": 1525043,
+        "n_donors": 360,
+        "n_cell_types": 51,
+        "tissues": "lung; lung parenchyma",
+        "diseases": "COVID-19; chronic obstructive pulmonary disease; cystic fibrosis; hypersensitivity pneumonitis",
+        "assays": "10x 3' v1; 10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "1e6a6ef9-7ec9-4c90-bbfb-2ad3c3165fd1",
+        "n_cells": 823285,
+        "n_donors": 163,
+        "n_cell_types": 33,
+        "tissues": "lung",
+        "diseases": "lung adenocarcinoma; non-small cell lung carcinoma; squamous cell lung carcinoma",
+        "assays": "10x 3' v1; 10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "f14bc322-1322-4184-8d16-409557525ea5",
+        "n_cells": 440854,
+        "n_donors": 109,
+        "n_cell_types": 33,
+        "tissues": "lung",
+        "diseases": "anthracosis; hypersensitivity pneumonitis; interstitial lung disease; lymphoid interstitial pneumonia",
+        "assays": "10x 5' v2"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "350237e0-9f48-4cbd-9140-3b44495549f3",
+        "n_cells": 654947,
+        "n_donors": 44,
+        "n_cell_types": 49,
+        "tissues": "lung",
+        "diseases": "normal",
+        "assays": "10x 3' v2; 10x 5' transcription profiling"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "6725ee8e-ef5b-4e68-8901-61bd14a1fe73",
+        "n_cells": 142486,
+        "n_donors": 40,
+        "n_cell_types": 28,
+        "tissues": "alveolar sac; lung",
+        "diseases": "normal",
+        "assays": "10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "d8da613f-e681-4c69-b463-e94f5e66847f",
+        "n_cells": 116313,
+        "n_donors": 27,
+        "n_cell_types": 30,
+        "tissues": "lung",
+        "diseases": "COVID-19; normal",
+        "assays": "10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "576f193c-75d0-4a11-bd25-8676587e6dc2",
+        "n_cells": 90384,
+        "n_donors": 26,
+        "n_cell_types": 11,
+        "tissues": "lung",
+        "diseases": "lung adenocarcinoma; normal; small cell lung carcinoma",
+        "assays": "10x 3' transcription profiling; 10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "d41f45c1-1b7b-4573-a998-ac5c5acb1647",
+        "n_cells": 82991,
+        "n_donors": 23,
+        "n_cell_types": 8,
+        "tissues": "left lung; lower lobe of left lung; lower lobe of right lung; middle lobe of right lung",
+        "diseases": "lung adenocarcinoma",
+        "assays": "10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "d68a8b48-abf0-4bd5-8834-155d34ec448a",
+        "n_cells": 255204,
+        "n_donors": 21,
+        "n_cell_types": 39,
+        "tissues": "middle lobe of right lung",
+        "diseases": "bronchopulmonary dysplasia; normal",
+        "assays": "10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "eb499fd8-7000-419f-8854-926b9b61b11f",
+        "n_cells": 122445,
+        "n_donors": 21,
+        "n_cell_types": 46,
+        "tissues": "lung",
+        "diseases": "normal",
+        "assays": "10x 3' v2; 10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "1b350d0a-4535-4879-beb6-1142f3f94947",
+        "n_cells": 213154,
+        "n_donors": 19,
+        "n_cell_types": 31,
+        "tissues": "epithelial lining fluid; lung",
+        "diseases": "normal",
+        "assays": "10x 3' v3; 10x 5' v2"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "8fbed309-d3d4-441b-b3ff-e2dcbcec2d35",
+        "n_cells": 57918,
+        "n_donors": 16,
+        "n_cell_types": 21,
+        "tissues": "lung parenchyma",
+        "diseases": "chronic obstructive pulmonary disease; normal",
+        "assays": "10x 3' v3"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "43a1506b-aa9e-46a3-b288-d210f4595ddf",
+        "n_cells": 20475,
+        "n_donors": 15,
+        "n_cell_types": 8,
+        "tissues": "lung epithelium",
+        "diseases": "normal",
+        "assays": "10x 5' v1"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "2f132ec9-24b5-422f-9be0-ccef03b4fe28",
+        "n_cells": 39778,
+        "n_donors": 12,
+        "n_cell_types": 9,
+        "tissues": "lung",
+        "diseases": "normal",
+        "assays": "10x 3' v2"
+      },
+      {
+        "group": "lung",
+        "dataset_id": "3dc61ca1-ce40-46b6-8337-f27260fd9a03",
+        "n_cells": 71752,
+        "n_donors": 12,
+        "n_cell_types": 77,
+        "tissues": "lung",
+        "diseases": "normal",
+        "assays": "10x 5' v1"
+      }
+    ]
+  }
+}

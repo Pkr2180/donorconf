@@ -1,0 +1,31 @@
+{
+  "simulation_only": true,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-21T05:41:01Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "reps": 100,
+    "alpha": 0.1,
+    "n_test": 30,
+    "seed": 2026,
+    "quick": false,
+    "grid": {
+      "donor_sd": [
+        0.4,
+        0.8,
+        1.2
+      ],
+      "size_difficulty": [
+        -0.5,
+        0.0,
+        0.5
+      ],
+      "n_cal": [
+        6,
+        12,
+        24
+      ]
+    }
+  }
+}

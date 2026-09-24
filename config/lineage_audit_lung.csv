@@ -1,0 +1,332 @@
+dataset,source_label,coarse,n_cells
+lung_A,"CD14-low, CD16-positive monocyte",monocyte,5
+lung_A,CD14-positive monocyte,monocyte,27
+lung_A,"CD16-negative, CD56-bright natural killer cell, human",NK,157
+lung_A,"CD16-positive, CD56-dim natural killer cell, human",NK,134
+lung_A,"CD22-positive, CD38-low small pre-B cell",B,5
+lung_A,"CD4-positive, alpha-beta T cell",T,157
+lung_A,"CD8-positive, alpha-beta T cell",T,62
+lung_A,alveolar adventitial fibroblast,fibroblast,5
+lung_A,alveolar type 1 fibroblast cell,AT1,30
+lung_A,common myeloid progenitor,<excluded>,5
+lung_A,conventional dendritic cell,<excluded>,491
+lung_A,dendritic cell,<excluded>,2
+lung_A,early lymphoid progenitor,<excluded>,28
+lung_A,early pro-B cell,B,11
+lung_A,endothelial cell,endothelial,8
+lung_A,epithelial cell of distal tubule,<excluded>,4
+lung_A,erythroid lineage cell,<excluded>,4
+lung_A,fibroblast,fibroblast,5
+lung_A,fraction A pre-pro B cell,B,13
+lung_A,granulocyte,<excluded>,2
+lung_A,granulocyte monocyte progenitor cell,monocyte,2
+lung_A,group 1 innate lymphoid cell,<excluded>,53
+lung_A,group 2 innate lymphoid cell,<excluded>,97
+lung_A,"group 3 innate lymphoid cell, human",<excluded>,144
+lung_A,hematopoietic multipotent progenitor cell,<excluded>,3
+lung_A,immature B cell,B,11
+lung_A,innate lymphoid cell,<excluded>,306
+lung_A,large pre-B-II cell,<excluded>,22
+lung_A,late pro-B cell,B,5
+lung_A,lung pericyte,mural,4
+lung_A,lung secretory cell,secretory,2
+lung_A,macrophage,macrophage,124
+lung_A,mast cell,<excluded>,20
+lung_A,mature B cell,B,154
+lung_A,megakaryocyte,<excluded>,2
+lung_A,megakaryocyte progenitor cell,<excluded>,10
+lung_A,megakaryocyte-erythroid progenitor cell,<excluded>,13
+lung_A,natural killer cell,NK,402
+lung_A,neutrophil,<excluded>,9
+lung_A,plasmacytoid dendritic cell,<excluded>,45
+lung_A,precursor B cell,B,10
+lung_A,pro-B cell,B,29
+lung_A,pro-T cell,T,4
+lung_A,regulatory T cell,T,50
+lung_A,smooth muscle cell,mural,3
+lung_A,unknown,<excluded>,3300
+lung_B,BEST4+ enterocyte,<excluded>,1
+lung_B,Kupffer cell,<excluded>,4
+lung_B,M cell of gut,<excluded>,52
+lung_B,Schwann cell,<excluded>,9
+lung_B,acinar cell,<excluded>,48
+lung_B,basal cell,basal,112
+lung_B,ciliated cell,ciliated,175
+lung_B,club cell,secretory,323
+lung_B,colon epithelial cell,<excluded>,69
+lung_B,endothelial cell,endothelial,5
+lung_B,enterocyte,<excluded>,466
+lung_B,enteroendocrine cell,<excluded>,177
+lung_B,epithelial cell,<excluded>,781
+lung_B,epithelial cell of pancreas,<excluded>,126
+lung_B,epithelial cell of stomach,<excluded>,292
+lung_B,goblet cell,secretory,241
+lung_B,hematopoietic cell,<excluded>,1
+lung_B,interstitial cell of Cajal,<excluded>,107
+lung_B,intestinal tuft cell,<excluded>,60
+lung_B,luminal cell of prostate epithelium,<excluded>,56
+lung_B,lung secretory cell,secretory,1
+lung_B,mesodermal cell,<excluded>,140
+lung_B,mesothelial cell,<excluded>,21
+lung_B,neuroendocrine cell,<excluded>,1
+lung_B,neuron,<excluded>,30
+lung_B,pancreatic A cell,<excluded>,340
+lung_B,pancreatic D cell,<excluded>,19
+lung_B,pancreatic ductal cell,<excluded>,52
+lung_B,pancreatic epsilon cell,<excluded>,26
+lung_B,paneth cell,<excluded>,10
+lung_B,pericyte,mural,17
+lung_B,pulmonary alveolar type 1 cell,AT1,86
+lung_B,pulmonary alveolar type 2 cell,AT2,35
+lung_B,smooth muscle cell,mural,25
+lung_B,stem cell,<excluded>,1673
+lung_B,stromal cell,<excluded>,131
+lung_B,type B pancreatic cell,<excluded>,288
+lung_C,B cell,B,6
+lung_C,"CD8-positive, alpha-beta cytotoxic T cell",T,45
+lung_C,airway submucosal gland collecting duct epithelial cell,<excluded>,63
+lung_C,alveolar adventitial fibroblast,fibroblast,41
+lung_C,alveolar capillary type 1 endothelial cell,endothelial,202
+lung_C,alveolar capillary type 2 endothelial cell,endothelial,44
+lung_C,alveolar macrophage,macrophage,974
+lung_C,alveolar type 1 fibroblast cell,AT1,41
+lung_C,basal cell,basal,18
+lung_C,chondrocyte,<excluded>,1
+lung_C,ciliated cell,ciliated,67
+lung_C,classical monocyte,monocyte,17
+lung_C,conventional dendritic cell,<excluded>,1
+lung_C,endothelial cell of artery,endothelial,39
+lung_C,endothelial cell of respiratory system lymphatic vessel,endothelial,26
+lung_C,goblet cell,secretory,2
+lung_C,helper T cell,T,32
+lung_C,ionocyte,<excluded>,2
+lung_C,lung interstitial macrophage,macrophage,36
+lung_C,lung megakaryocyte,<excluded>,1
+lung_C,lung secretory cell,secretory,44
+lung_C,mast cell,<excluded>,4
+lung_C,mucus secreting cell of tracheobronchial tree submucosal gland,<excluded>,77
+lung_C,myoepithelial cell,<excluded>,61
+lung_C,natural killer cell,NK,19
+lung_C,neutrophil,<excluded>,13
+lung_C,non-classical monocyte,monocyte,1
+lung_C,pericyte,mural,18
+lung_C,plasma cell,<excluded>,25
+lung_C,pulmonary alveolar type 1 cell,AT1,137
+lung_C,pulmonary alveolar type 2 cell,AT2,546
+lung_C,pulmonary neuroendocrine cell,<excluded>,14
+lung_C,respiratory tract suprabasal cell,basal,2
+lung_C,secondary crest myofibroblast,fibroblast,18
+lung_C,secretory cell,secretory,29
+lung_C,serous secreting cell,<excluded>,244
+lung_C,tracheobronchial smooth muscle cell,mural,5
+lung_C,vascular associated smooth muscle cell,mural,78
+lung_C,vein endothelial cell,endothelial,84
+lung_C,vein endothelial cell of respiratory system,endothelial,73
+lung_D,B cell,B,1
+lung_D,"CD16-negative, CD56-bright natural killer cell, human",NK,87
+lung_D,"CD16-positive, CD56-dim natural killer cell, human",NK,203
+lung_D,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",T,125
+lung_D,"CD4-positive, alpha-beta memory T cell",T,210
+lung_D,"CD8-positive, alpha-beta memory T cell",T,310
+lung_D,"central memory CD4-positive, alpha-beta T cell",T,346
+lung_D,"central memory CD8-positive, alpha-beta T cell",T,21
+lung_D,classical monocyte,monocyte,206
+lung_D,conventional dendritic cell,<excluded>,16
+lung_D,"effector memory CD4-positive, alpha-beta T cell",T,102
+lung_D,"effector memory CD4-positive, alpha-beta T cell, terminally differentiated",T,30
+lung_D,"effector memory CD8-positive, alpha-beta T cell",T,84
+lung_D,"effector memory CD8-positive, alpha-beta T cell, terminally differentiated",T,88
+lung_D,gamma-delta T cell,T,46
+lung_D,germinal center B cell,B,7
+lung_D,group 1 innate lymphoid cell,<excluded>,22
+lung_D,group 3 innate lymphoid cell,<excluded>,12
+lung_D,immature innate lymphoid cell,<excluded>,32
+lung_D,macrophage,macrophage,290
+lung_D,mast cell,<excluded>,36
+lung_D,memory B cell,B,464
+lung_D,mucosal invariant T cell,T,26
+lung_D,naive B cell,B,302
+lung_D,"naive thymus-derived CD4-positive, alpha-beta T cell",T,248
+lung_D,"naive thymus-derived CD8-positive, alpha-beta T cell",T,111
+lung_D,non-classical monocyte,monocyte,43
+lung_D,plasma cell,<excluded>,54
+lung_D,plasmablast,<excluded>,23
+lung_D,plasmacytoid dendritic cell,<excluded>,4
+lung_D,progenitor cell,<excluded>,51
+lung_E,B cell,B,52
+lung_E,"CD4-positive, alpha-beta T cell",T,217
+lung_E,"CD8-positive, alpha-beta T cell",T,117
+lung_E,alveolar adventitial fibroblast,fibroblast,141
+lung_E,alveolar macrophage,macrophage,446
+lung_E,brush cell of tracheobronchial tree,<excluded>,5
+lung_E,capillary endothelial cell,endothelial,30
+lung_E,club cell,secretory,42
+lung_E,dendritic cell,<excluded>,30
+lung_E,endothelial cell,endothelial,81
+lung_E,endothelial cell of artery,endothelial,40
+lung_E,epithelial cell,<excluded>,51
+lung_E,fibroblast,fibroblast,572
+lung_E,lung goblet cell,secretory,60
+lung_E,lung multiciliated epithelial cell,ciliated,89
+lung_E,macrophage,macrophage,356
+lung_E,mast cell,<excluded>,49
+lung_E,mesothelial fibroblast,fibroblast,9
+lung_E,monocyte,monocyte,270
+lung_E,mucus secreting cell,<excluded>,42
+lung_E,natural killer cell,NK,161
+lung_E,neuron,<excluded>,85
+lung_E,pericyte,mural,28
+lung_E,plasma cell,<excluded>,200
+lung_E,pulmonary alveolar type 2 cell,AT2,742
+lung_E,regulatory T cell,T,16
+lung_E,respiratory basal cell,basal,17
+lung_E,tracheobronchial smooth muscle cell,mural,40
+lung_E,vascular associated smooth muscle cell,mural,13
+lung_E,vein endothelial cell,endothelial,49
+lung_F,B cell,B,76
+lung_F,CD1c-positive myeloid dendritic cell,<excluded>,117
+lung_F,"CD4-positive, alpha-beta T cell",T,183
+lung_F,"CD8-positive, alpha-beta T cell",T,275
+lung_F,T cell,T,12
+lung_F,acinar cell,<excluded>,5
+lung_F,alveolar adventitial fibroblast,fibroblast,35
+lung_F,alveolar macrophage,macrophage,886
+lung_F,alveolar type 1 fibroblast cell,AT1,18
+lung_F,bronchial goblet cell,secretory,5
+lung_F,bronchus fibroblast of lung,fibroblast,7
+lung_F,capillary endothelial cell,endothelial,117
+lung_F,classical monocyte,monocyte,227
+lung_F,club cell,secretory,55
+lung_F,conventional dendritic cell,<excluded>,2
+lung_F,dendritic cell,<excluded>,3
+lung_F,elicited macrophage,macrophage,429
+lung_F,endothelial cell of lymphatic vessel,endothelial,33
+lung_F,epithelial cell of lower respiratory tract,<excluded>,30
+lung_F,ionocyte,<excluded>,5
+lung_F,lung macrophage,macrophage,14
+lung_F,lung pericyte,mural,8
+lung_F,mast cell,<excluded>,37
+lung_F,mesothelial cell,<excluded>,2
+lung_F,mucus secreting cell,<excluded>,9
+lung_F,multiciliated columnar cell of tracheobronchial tree,ciliated,383
+lung_F,multiciliated epithelial cell,ciliated,7
+lung_F,nasal mucosa goblet cell,secretory,26
+lung_F,natural killer cell,NK,117
+lung_F,non-classical monocyte,monocyte,104
+lung_F,plasma cell,<excluded>,40
+lung_F,plasmacytoid dendritic cell,<excluded>,20
+lung_F,pulmonary alveolar epithelial cell,<excluded>,4
+lung_F,pulmonary alveolar type 1 cell,AT1,52
+lung_F,pulmonary alveolar type 2 cell,AT2,319
+lung_F,pulmonary artery endothelial cell,endothelial,35
+lung_F,respiratory basal cell,basal,170
+lung_F,respiratory tract hillock cell,<excluded>,3
+lung_F,smooth muscle cell,mural,1
+lung_F,tracheobronchial goblet cell,secretory,1
+lung_F,tracheobronchial serous cell,<excluded>,9
+lung_F,tracheobronchial smooth muscle cell,mural,9
+lung_F,unknown,<excluded>,1763
+lung_F,vein endothelial cell,endothelial,66
+lung_G,B cell,B,42
+lung_G,"CD8-positive, alpha-beta cytotoxic T cell",T,220
+lung_G,adventitial fibroblast,fibroblast,59
+lung_G,alveolar macrophage,macrophage,233
+lung_G,alveolar type 1 fibroblast cell,AT1,24
+lung_G,basal cell,basal,88
+lung_G,ciliated cell,ciliated,717
+lung_G,classical monocyte,monocyte,358
+lung_G,conventional dendritic cell,<excluded>,95
+lung_G,endothelial cell of arteriole,endothelial,82
+lung_G,endothelial cell of respiratory system lymphatic vessel,endothelial,30
+lung_G,epithelial cell of lung,<excluded>,52
+lung_G,granzyme K-associated CD8 T cell,T,5
+lung_G,helper T cell,T,112
+lung_G,hematopoietic cell,<excluded>,73
+lung_G,lung interstitial macrophage,macrophage,65
+lung_G,lung secretory cell,secretory,309
+lung_G,macrophage,macrophage,1423
+lung_G,mast cell,<excluded>,31
+lung_G,mesothelial cell of pleura,<excluded>,18
+lung_G,monocyte,monocyte,141
+lung_G,"myeloid dendritic cell, human",<excluded>,106
+lung_G,myofibroblast cell,fibroblast,10
+lung_G,natural killer cell,NK,131
+lung_G,pericyte,mural,22
+lung_G,plasma cell,<excluded>,21
+lung_G,plasmacytoid dendritic cell,<excluded>,5
+lung_G,pulmonary alveolar type 1 cell,AT1,89
+lung_G,pulmonary alveolar type 2 cell,AT2,747
+lung_G,pulmonary capillary endothelial cell,endothelial,76
+lung_G,pulmonary neuroendocrine cell,<excluded>,2
+lung_G,smooth muscle cell,mural,11
+lung_G,vein endothelial cell of respiratory system,endothelial,160
+lung_H,B cell,B,18
+lung_H,"CD8-positive, alpha-beta cytotoxic T cell",T,8
+lung_H,alveolar adventitial fibroblast,fibroblast,2
+lung_H,alveolar capillary type 1 endothelial cell,endothelial,70
+lung_H,alveolar capillary type 2 endothelial cell,endothelial,47
+lung_H,alveolar macrophage,macrophage,80
+lung_H,alveolar type 1 fibroblast cell,AT1,204
+lung_H,basal cell,basal,50
+lung_H,brush cell of tracheobronchial tree,<excluded>,41
+lung_H,ciliated cell,ciliated,80
+lung_H,classical monocyte,monocyte,77
+lung_H,conventional dendritic cell,<excluded>,14
+lung_H,endothelial cell of artery,endothelial,15
+lung_H,endothelial cell of respiratory system lymphatic vessel,endothelial,4
+lung_H,goblet cell,secretory,1
+lung_H,helper T cell,T,76
+lung_H,lung interstitial macrophage,macrophage,51
+lung_H,lung megakaryocyte,<excluded>,32
+lung_H,lung secretory cell,secretory,89
+lung_H,mast cell,<excluded>,8
+lung_H,mature conventional dendritic cell,<excluded>,3
+lung_H,mucus secreting cell of tracheobronchial tree submucosal gland,<excluded>,2
+lung_H,natural killer cell,NK,14
+lung_H,non-classical monocyte,monocyte,32
+lung_H,pericyte,mural,33
+lung_H,plasmacytoid dendritic cell,<excluded>,14
+lung_H,pulmonary alveolar type 1 cell,AT1,621
+lung_H,pulmonary alveolar type 2 cell,AT2,1124
+lung_H,pulmonary neuroendocrine cell,<excluded>,3
+lung_H,regulatory T cell,T,4
+lung_H,secondary crest myofibroblast,fibroblast,61
+lung_H,secretory cell,secretory,14
+lung_H,serous secreting cell,<excluded>,236
+lung_H,tracheobronchial smooth muscle cell,mural,6
+lung_H,vascular associated smooth muscle cell,mural,2
+lung_H,vein endothelial cell,endothelial,11
+lung_H,vein endothelial cell of respiratory system,endothelial,3
+lung_I,B cell,B,342
+lung_I,CD1c-positive myeloid dendritic cell,<excluded>,101
+lung_I,"CD4-positive, alpha-beta T cell",T,761
+lung_I,"CD8-positive, alpha-beta T cell",T,684
+lung_I,alveolar macrophage,macrophage,347
+lung_I,bronchus fibroblast of lung,fibroblast,42
+lung_I,capillary endothelial cell,endothelial,78
+lung_I,classical monocyte,monocyte,300
+lung_I,club cell,secretory,13
+lung_I,conventional dendritic cell,<excluded>,11
+lung_I,dendritic cell,<excluded>,16
+lung_I,endothelial cell of lymphatic vessel,endothelial,16
+lung_I,epithelial cell of lung,<excluded>,210
+lung_I,fibroblast of lung,fibroblast,14
+lung_I,macrophage,macrophage,518
+lung_I,malignant cell,<excluded>,968
+lung_I,mast cell,<excluded>,93
+lung_I,mesothelial cell,<excluded>,2
+lung_I,multiciliated epithelial cell,ciliated,24
+lung_I,myeloid cell,<excluded>,32
+lung_I,natural killer cell,NK,287
+lung_I,neutrophil,<excluded>,183
+lung_I,non-classical monocyte,monocyte,22
+lung_I,pericyte,mural,24
+lung_I,plasma cell,<excluded>,220
+lung_I,plasmacytoid dendritic cell,<excluded>,19
+lung_I,pulmonary alveolar type 1 cell,AT1,11
+lung_I,pulmonary alveolar type 2 cell,AT2,131
+lung_I,pulmonary artery endothelial cell,endothelial,6
+lung_I,regulatory T cell,T,220
+lung_I,smooth muscle cell,mural,12
+lung_I,stromal cell,<excluded>,7
+lung_I,vein endothelial cell,endothelial,151

@@ -1,0 +1,47 @@
+[
+  {
+    "accession": "GSE178360",
+    "found": true,
+    "title": "Human distal lung maps and lineage hierarchies reveal a bipotent progenitor [single-cell RNA-seq]",
+    "taxon": "Homo sapiens",
+    "n_samples": 3,
+    "gdstype": "Expression profiling by high throughput sequencing",
+    "summary": "We performed single-cell RNA-seq using 10x Genomic Chromium v3.1 on micro-dissected human distal airways."
+  },
+  {
+    "accession": "GSE127465",
+    "found": true,
+    "title": "Single cell transcriptomics of human and mouse lung cancers reveals conserved myeloid populations across individuals and species",
+    "taxon": "Homo sapiens; Mus musculus",
+    "n_samples": 40,
+    "gdstype": "Expression profiling by high throughput sequencing",
+    "summary": "Tumor-infiltrating myeloid cells (TIMs) comprise monocytes, macrophages, dendritic cells and neutrophils, and have emerged as key regulators of cancer growth. These cells can diversify into a spectrum of states, which may promote or limit tumor outgrowth, but remain poorly understood. Here, we used single-cell RNA sequencing to map TIMs in non-small cell lung cancer patients. We uncovered 25 TIM s"
+  },
+  {
+    "accession": "GSE84133",
+    "found": true,
+    "title": "A single-cell transcriptomic map of the human and mouse pancreas reveals inter- and intra-cell population structure",
+    "taxon": "Homo sapiens; Mus musculus",
+    "n_samples": 6,
+    "gdstype": "Expression profiling by high throughput sequencing",
+    "summary": "While the function of the mammalian pancreas hinges on complex interactions of distinct cell types, gene expression profiles have primarily been described with bulk mixtures of cells. Here, we invoked inDrop, a droplet-based single-cell RNA-Seq method, to determine the transcriptomes of over 12,000 individual pancreatic cells from four human donors and two strains of mice. Cells could be divided i"
+  },
+  {
+    "accession": "GSE180878",
+    "found": true,
+    "title": "A human breast transcriptome atlas",
+    "taxon": "Homo sapiens",
+    "n_samples": 16,
+    "gdstype": "Expression profiling by high throughput sequencing",
+    "summary": "The breast is a dynamic organ whose response to physiological and pathophysiological conditions alters its disease susceptibility, yet the specific effects of these clinical variables on cell state remain poorly annotated. We present a unified, high-resolution breast atlas by integrating single-cell RNA-seq, mass cytometry, and cyclic immunofluorescence, encompassing a myriad of states. We define "
+  },
+  {
+    "accession": "GSE165816",
+    "found": true,
+    "title": "Single Cell Transcriptomic Landscape of Diabetic Foot Ulcers",
+    "taxon": "Homo sapiens",
+    "n_samples": 54,
+    "gdstype": "Expression profiling by high throughput sequencing",
+    "summary": "Diabetic foot ulcers (DFUs) are a devastating complication of diabetes. In order to identify systemic and local factors associated with DFU healing, we examined the cellular landscape of DFUs by single-cell RNA-seq analysis of foot and forearm skin specimens, as well as PBMC samples, from 10 non-diabetic subjects, and 17 diabetic patients, 11 with, and 6 without DFU. Our analysis shows enrichment "
+  }
+]

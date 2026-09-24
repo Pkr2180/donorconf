@@ -1,0 +1,666 @@
+{
+  "simulation_only": false,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-21T08:19:32Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "datasets": [
+      "blood_A",
+      "blood_B",
+      "blood_C",
+      "blood_D",
+      "blood_E"
+    ],
+    "scheme": "blood_fine",
+    "n_triples": 24,
+    "reps_per_triple": 2,
+    "n_donors": 30,
+    "min_cells": 100,
+    "min_donors": 5,
+    "alpha": 0.1,
+    "embeddings": [
+      "emb_tf-sapiens",
+      "emb_tf-exemplar-human",
+      "emb_scvi"
+    ],
+    "name": "c_benchmark_blood"
+  },
+  "exploratory": true,
+  "data": {
+    "blood_B|blood_C|blood_D": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        }
+      }
+    },
+    "blood_C|blood_B|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        }
+      }
+    },
+    "blood_B|blood_D|blood_E": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_D|blood_E": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        }
+      }
+    },
+    "blood_D|blood_C|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        }
+      }
+    },
+    "blood_C|blood_E|blood_B": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        }
+      }
+    },
+    "blood_E|blood_B|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_C|blood_D": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        }
+      }
+    },
+    "blood_E|blood_B|blood_C": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        }
+      }
+    },
+    "blood_E|blood_D|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_E|blood_C": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_B|blood_E": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        }
+      }
+    },
+    "blood_D|blood_C|blood_E": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        }
+      }
+    },
+    "blood_B|blood_E|blood_D": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        }
+      }
+    },
+    "blood_C|blood_A|blood_B": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        }
+      }
+    },
+    "blood_D|blood_C|blood_B": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_E|blood_D": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        }
+      }
+    },
+    "blood_C|blood_E|blood_D": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        },
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10028,
+          "donors": 80
+        }
+      }
+    },
+    "blood_C|blood_D|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        }
+      }
+    },
+    "blood_B|blood_D|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        }
+      }
+    },
+    "blood_E|blood_C|blood_A": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        },
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11399,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_C|blood_B": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11663,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        }
+      }
+    },
+    "blood_A|blood_B|blood_D": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical",
+        "mono_nonclassical"
+      ],
+      "per_set": {
+        "blood_A": {
+          "cells": 12000,
+          "kept": 11579,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 10049,
+          "donors": 80
+        },
+        "blood_D": {
+          "cells": 11863,
+          "kept": 10499,
+          "donors": 80
+        }
+      }
+    },
+    "blood_E|blood_C|blood_B": {
+      "classes": [
+        "B",
+        "CD4_T",
+        "CD8_T",
+        "NK",
+        "mono_classical"
+      ],
+      "per_set": {
+        "blood_E": {
+          "cells": 12000,
+          "kept": 9290,
+          "donors": 80
+        },
+        "blood_C": {
+          "cells": 12000,
+          "kept": 11165,
+          "donors": 80
+        },
+        "blood_B": {
+          "cells": 12000,
+          "kept": 9580,
+          "donors": 80
+        }
+      }
+    }
+  }
+}

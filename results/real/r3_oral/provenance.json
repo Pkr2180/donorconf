@@ -1,0 +1,63 @@
+{
+  "simulation_only": false,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-21T06:57:56Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "name": "r3_oral",
+    "sets": [
+      "gingiva",
+      "oropharynx",
+      "oral_scc"
+    ],
+    "permute_roles": false,
+    "n_ref": 20,
+    "n_cal": 10,
+    "n_tgt": 10,
+    "min_cells": 40,
+    "min_donors": 4,
+    "scheme": "oral_coarse",
+    "reps": 60,
+    "alpha": 0.1,
+    "embeddings": [
+      "emb_tf-sapiens",
+      "emb_tf-exemplar-human",
+      "emb_scvi"
+    ]
+  },
+  "exploratory": true,
+  "data": {
+    "classes": [
+      "B",
+      "T",
+      "endothelial",
+      "epithelial",
+      "fibroblast",
+      "myeloid"
+    ],
+    "n_classes": 6,
+    "sets": [
+      "gingiva",
+      "oropharynx",
+      "oral_scc"
+    ],
+    "per_set": {
+      "gingiva": {
+        "cells": 10200,
+        "kept": 7487,
+        "donors": 34
+      },
+      "oropharynx": {
+        "cells": 3000,
+        "kept": 2629,
+        "donors": 10
+      },
+      "oral_scc": {
+        "cells": 3460,
+        "kept": 3374,
+        "donors": 12
+      }
+    }
+  }
+}

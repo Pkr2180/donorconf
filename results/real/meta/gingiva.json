@@ -1,0 +1,18 @@
+{
+  "tag": "gingiva",
+  "dataset_id": "9fcb0b73-c734-40a5-be9c-ace7eea401c9",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 105918,
+  "n_donors_in_dataset": 34,
+  "n_donors_kept": 34,
+  "n_cells_kept": 10200,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 300,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 27
+}

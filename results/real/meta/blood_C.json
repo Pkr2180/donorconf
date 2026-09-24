@@ -1,0 +1,18 @@
+{
+  "tag": "blood_C",
+  "dataset_id": "218acb0f-9f2f-4f76-b90b-15a4b7c7f629",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 1263676,
+  "n_donors_in_dataset": 261,
+  "n_donors_kept": 80,
+  "n_cells_kept": 12000,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 150,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 11
+}

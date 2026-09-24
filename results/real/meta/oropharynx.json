@@ -1,0 +1,18 @@
+{
+  "tag": "oropharynx",
+  "dataset_id": "b6b5ea88-e092-46e4-b9c5-e93b52d5c195",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 82844,
+  "n_donors_in_dataset": 10,
+  "n_donors_kept": 10,
+  "n_cells_kept": 3000,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 300,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 15
+}

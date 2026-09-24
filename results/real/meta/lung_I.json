@@ -1,0 +1,19 @@
+{
+  "tag": "lung_I",
+  "dataset_id": "1e6a6ef9-7ec9-4c90-bbfb-2ad3c3165fd1",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 823285,
+  "n_donors_in_dataset": 163,
+  "n_donors_kept": 40,
+  "n_cells_kept": 5865,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 150,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 33,
+  "tissue_general_filter": "lung"
+}

@@ -1,0 +1,43 @@
+{
+  "simulation_only": false,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-21T06:48:45Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "reps": 100,
+    "alpha": 0.1,
+    "embeddings": [
+      "emb_tf-sapiens",
+      "emb_tf-exemplar-human",
+      "emb_scvi"
+    ]
+  },
+  "exploratory": true,
+  "data": {
+    "classes": [
+      "B cell",
+      "T cell",
+      "capillary endothelial cell",
+      "conventional dendritic cell",
+      "endothelial cell of artery",
+      "endothelial cell of lymphatic vessel",
+      "endothelial cell of venule",
+      "fibroblast",
+      "helper T cell",
+      "keratinocyte",
+      "macrophage",
+      "mast cell",
+      "natural killer cell",
+      "neutrophil",
+      "pericyte",
+      "plasma cell",
+      "vascular associated smooth muscle cell"
+    ],
+    "n_classes": 17,
+    "cells_total": 10200,
+    "cells_dropped_outside_vocabulary": 615,
+    "n_donors": 34
+  },
+  "lock": "results/real/ANALYSIS_LOCK.md"
+}

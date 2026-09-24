@@ -1,0 +1,632 @@
+{
+  "simulation_only": false,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-22T03:32:31Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "datasets": [
+      "lung_C",
+      "lung_E",
+      "lung_F",
+      "lung_G",
+      "lung_H",
+      "lung_I"
+    ],
+    "scheme": "lung_coarse",
+    "n_triples": 24,
+    "reps_per_triple": 2,
+    "n_donors": 30,
+    "min_cells": 100,
+    "min_donors": 5,
+    "alpha": 0.1,
+    "embeddings": [
+      "emb_tf-sapiens",
+      "emb_tf-exemplar-human",
+      "emb_scvi"
+    ],
+    "name": "c_benchmark_lung",
+    "torchcp": true
+  },
+  "exploratory": true,
+  "data": {
+    "lung_I|lung_C|lung_F": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1247,
+          "donors": 38
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 1899,
+          "donors": 36
+        }
+      }
+    },
+    "lung_G|lung_E|lung_I": {
+      "classes": [
+        "AT2",
+        "NK",
+        "T",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_G": {
+          "cells": 5557,
+          "kept": 3783,
+          "donors": 40
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2525,
+          "donors": 27
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 3521,
+          "donors": 40
+        }
+      }
+    },
+    "lung_E|lung_I|lung_C": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1247,
+          "donors": 38
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        }
+      }
+    },
+    "lung_I|lung_G|lung_F": {
+      "classes": [
+        "AT2",
+        "NK",
+        "T",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 3521,
+          "donors": 40
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 3783,
+          "donors": 40
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 2817,
+          "donors": 37
+        }
+      }
+    },
+    "lung_C|lung_E|lung_G": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 2816,
+          "donors": 40
+        }
+      }
+    },
+    "lung_E|lung_C|lung_I": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1247,
+          "donors": 38
+        }
+      }
+    },
+    "lung_C|lung_H|lung_F": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1405,
+          "donors": 21
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 1899,
+          "donors": 36
+        }
+      }
+    },
+    "lung_C|lung_I|lung_E": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1247,
+          "donors": 38
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        }
+      }
+    },
+    "lung_I|lung_E|lung_H": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2014,
+          "donors": 27
+        },
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        }
+      }
+    },
+    "lung_E|lung_F|lung_I": {
+      "classes": [
+        "AT2",
+        "NK",
+        "T",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2525,
+          "donors": 27
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 2817,
+          "donors": 37
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 3521,
+          "donors": 40
+        }
+      }
+    },
+    "lung_C|lung_F|lung_G": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 1899,
+          "donors": 36
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 2816,
+          "donors": 40
+        }
+      }
+    },
+    "lung_F|lung_G|lung_H": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_F": {
+          "cells": 5719,
+          "kept": 2230,
+          "donors": 37
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 3315,
+          "donors": 40
+        },
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        }
+      }
+    },
+    "lung_H|lung_E|lung_C": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1405,
+          "donors": 21
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        }
+      }
+    },
+    "lung_F|lung_E|lung_C": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_F": {
+          "cells": 5719,
+          "kept": 1899,
+          "donors": 36
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        }
+      }
+    },
+    "lung_H|lung_I|lung_F": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 2230,
+          "donors": 37
+        }
+      }
+    },
+    "lung_I|lung_C|lung_E": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1247,
+          "donors": 38
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        }
+      }
+    },
+    "lung_I|lung_F|lung_H": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 2230,
+          "donors": 37
+        },
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        }
+      }
+    },
+    "lung_I|lung_H|lung_E": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        },
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2014,
+          "donors": 27
+        }
+      }
+    },
+    "lung_H|lung_I|lung_G": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 3315,
+          "donors": 40
+        }
+      }
+    },
+    "lung_H|lung_E|lung_I": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2014,
+          "donors": 27
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        }
+      }
+    },
+    "lung_I|lung_F|lung_G": {
+      "classes": [
+        "AT2",
+        "NK",
+        "T",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_I": {
+          "cells": 5865,
+          "kept": 3521,
+          "donors": 40
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 2817,
+          "donors": 37
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 3783,
+          "donors": 40
+        }
+      }
+    },
+    "lung_H|lung_I|lung_E": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte"
+      ],
+      "per_set": {
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1514,
+          "donors": 21
+        },
+        "lung_I": {
+          "cells": 5865,
+          "kept": 1569,
+          "donors": 38
+        },
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2014,
+          "donors": 27
+        }
+      }
+    },
+    "lung_E|lung_C|lung_F": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage"
+      ],
+      "per_set": {
+        "lung_E": {
+          "cells": 4050,
+          "kept": 1744,
+          "donors": 27
+        },
+        "lung_C": {
+          "cells": 3150,
+          "kept": 2024,
+          "donors": 21
+        },
+        "lung_F": {
+          "cells": 5719,
+          "kept": 1899,
+          "donors": 36
+        }
+      }
+    },
+    "lung_E|lung_H|lung_G": {
+      "classes": [
+        "AT2",
+        "endothelial",
+        "macrophage",
+        "monocyte",
+        "secretory"
+      ],
+      "per_set": {
+        "lung_E": {
+          "cells": 4050,
+          "kept": 2116,
+          "donors": 27
+        },
+        "lung_H": {
+          "cells": 3150,
+          "kept": 1618,
+          "donors": 21
+        },
+        "lung_G": {
+          "cells": 5557,
+          "kept": 3624,
+          "donors": 40
+        }
+      }
+    }
+  }
+}

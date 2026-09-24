@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below. Pre-release research code; no peer-reviewed article yet."
+title: "donorconf: donor-level conformal calibration for transferred single-cell annotations"
+version: 0.0.1
+date-released: 2026-09-21
+license: MIT
+authors:
+  - family-names: Kumar
+    given-names: Pradeep
+    orcid: "https://orcid.org/0000-0002-6653-4123"
+repository-code: "TO_BE_ADDED_AFTER_REPOSITORY_CREATION"
+keywords:
+  - conformal prediction
+  - single-cell RNA-seq
+  - foundation models
+  - uncertainty quantification
+  - prediction-powered inference

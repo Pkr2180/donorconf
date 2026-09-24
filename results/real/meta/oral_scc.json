@@ -1,0 +1,18 @@
+{
+  "tag": "oral_scc",
+  "dataset_id": "55ca4411-8c7d-4aef-a572-50852e030c05",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 28186,
+  "n_donors_in_dataset": 12,
+  "n_donors_kept": 12,
+  "n_cells_kept": 3460,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 300,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 7
+}

@@ -1,0 +1,5 @@
+{'classes': ['endothelial', 'epithelial', 'fibroblast', 'myeloid'], 'n_classes': 4, 'sets': ['gingiva', 'oral_normal_multisite', 'oral_scc'], 'per_set': {'gingiva': {'cells': 10200, 'kept': 5620, 'donors': 34}, 'oral_normal_multisite': {'cells': 5731, 'kept': 3675, 'donors': 20}, 'oral_scc': {'cells': 3460, 'kept': 1796, 'donors': 12}}}
+emb_tf-sapiens done
+emb_tf-exemplar-human done
+emb_scvi done
+written to D:\pending work\bioinformatics - top q1\donorconf\results\real\r3b_oral

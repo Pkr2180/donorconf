@@ -1,0 +1,18 @@
+{
+  "tag": "blood_E",
+  "dataset_id": "c7775e88-49bf-4ba2-a03b-93f00447c958",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 647366,
+  "n_donors_in_dataset": 120,
+  "n_donors_kept": 80,
+  "n_cells_kept": 12000,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 150,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 43
+}

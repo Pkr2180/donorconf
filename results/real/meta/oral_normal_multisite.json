@@ -1,0 +1,18 @@
+{
+  "tag": "oral_normal_multisite",
+  "dataset_id": "cb252df6-6e49-4553-abd1-495a00006fb1",
+  "census_version": "2025-11-08",
+  "seed": 0,
+  "n_cells_in_dataset": 76153,
+  "n_donors_in_dataset": 20,
+  "n_donors_kept": 20,
+  "n_cells_kept": 5731,
+  "n_cells_dropped_missing_embedding": 0,
+  "max_cells_per_donor": 300,
+  "embedding_dims": {
+    "tf-sapiens": 2048,
+    "tf-exemplar-human": 2048,
+    "scvi": 50
+  },
+  "n_cell_types": 10
+}

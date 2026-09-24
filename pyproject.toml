@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "donorconf"
+version = "0.0.1"
+description = "Donor-level conformal calibration and donor-level prediction-powered composition inference for transferred single-cell annotations (pre-release research code)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4", "pandas>=2.0"]
+
+[project.optional-dependencies]
+anndata = ["anndata>=0.10"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+donorconf = "donorconf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

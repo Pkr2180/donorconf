@@ -1,0 +1,39 @@
+{
+  "simulation_only": false,
+  "warning": "Simulated data with known ground truth. Not biological evidence.",
+  "utc_time": "2026-09-21T07:00:16Z",
+  "python": "3.12.10",
+  "numpy": "2.2.5",
+  "config": {
+    "reps": 120,
+    "n_lab_normal": 6,
+    "n_lab_perio": 4,
+    "n_boot": 60,
+    "alpha": 0.05,
+    "embeddings": [
+      "emb_scvi",
+      "emb_tf-sapiens"
+    ]
+  },
+  "exploratory": true,
+  "classes": [
+    "B cell",
+    "T cell",
+    "capillary endothelial cell",
+    "conventional dendritic cell",
+    "endothelial cell of artery",
+    "endothelial cell of lymphatic vessel",
+    "endothelial cell of venule",
+    "fibroblast",
+    "helper T cell",
+    "keratinocyte",
+    "macrophage",
+    "mast cell",
+    "natural killer cell",
+    "neutrophil",
+    "pericyte",
+    "plasma cell",
+    "vascular associated smooth muscle cell"
+  ],
+  "note": "finite-population design-based check; DCATS not run"
+}

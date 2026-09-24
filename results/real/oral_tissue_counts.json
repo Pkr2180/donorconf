@@ -1,0 +1,181 @@
+{
+  "census_version": "stable",
+  "n_human_tissue_labels": 436,
+  "hit_counts": [
+    {
+      "category": "tissue",
+      "label": "middle temporal gyrus",
+      "cnt": 3225610
+    },
+    {
+      "category": "tissue_general",
+      "label": "esophagus",
+      "cnt": 684152
+    },
+    {
+      "category": "tissue",
+      "label": "epithelium of esophagus",
+      "cnt": 507474
+    },
+    {
+      "category": "tissue",
+      "label": "gingiva",
+      "cnt": 398609
+    },
+    {
+      "category": "tissue",
+      "label": "right temporal lobe",
+      "cnt": 304200
+    },
+    {
+      "category": "tissue",
+      "label": "buccal mucosa",
+      "cnt": 205968
+    },
+    {
+      "category": "tissue_general",
+      "label": "tongue",
+      "cnt": 133094
+    },
+    {
+      "category": "tissue",
+      "label": "temporal cortex",
+      "cnt": 130822
+    },
+    {
+      "category": "tissue",
+      "label": "tonsil",
+      "cnt": 115963
+    },
+    {
+      "category": "tissue",
+      "label": "temporal lobe",
+      "cnt": 109535
+    },
+    {
+      "category": "tissue",
+      "label": "dental pulp",
+      "cnt": 108452
+    },
+    {
+      "category": "tissue",
+      "label": "minor salivary gland",
+      "cnt": 98173
+    },
+    {
+      "category": "tissue",
+      "label": "left temporal lobe",
+      "cnt": 87919
+    },
+    {
+      "category": "tissue",
+      "label": "oropharynx",
+      "cnt": 82844
+    },
+    {
+      "category": "tissue",
+      "label": "posterior part of tongue",
+      "cnt": 71805
+    },
+    {
+      "category": "tissue",
+      "label": "lower esophagus",
+      "cnt": 66785
+    },
+    {
+      "category": "tissue",
+      "label": "esophagus",
+      "cnt": 64754
+    },
+    {
+      "category": "tissue",
+      "label": "anterior part of tongue",
+      "cnt": 43968
+    },
+    {
+      "category": "tissue",
+      "label": "nasopharynx",
+      "cnt": 39740
+    },
+    {
+      "category": "tissue",
+      "label": "femoral artery",
+      "cnt": 35349
+    },
+    {
+      "category": "tissue",
+      "label": "esophagus muscularis mucosa",
+      "cnt": 34173
+    },
+    {
+      "category": "tissue",
+      "label": "esophagogastric junction",
+      "cnt": 29105
+    },
+    {
+      "category": "tissue_general",
+      "label": "esophagogastric junction",
+      "cnt": 29105
+    },
+    {
+      "category": "tissue",
+      "label": "oral cavity",
+      "cnt": 28186
+    },
+    {
+      "category": "tissue",
+      "label": "hard palate",
+      "cnt": 27546
+    },
+    {
+      "category": "tissue",
+      "label": "mucosa of dorsum of tongue",
+      "cnt": 16832
+    },
+    {
+      "category": "tissue",
+      "label": "salivary gland epithelium",
+      "cnt": 15796
+    },
+    {
+      "category": "tissue",
+      "label": "saliva",
+      "cnt": 14502
+    },
+    {
+      "category": "tissue_general",
+      "label": "saliva",
+      "cnt": 14502
+    },
+    {
+      "category": "tissue",
+      "label": "submucosal esophageal gland",
+      "cnt": 10966
+    },
+    {
+      "category": "tissue",
+      "label": "periodontium",
+      "cnt": 10329
+    },
+    {
+      "category": "tissue",
+      "label": "mucosa of lip",
+      "cnt": 6588
+    },
+    {
+      "category": "tissue",
+      "label": "white matter of temporal lobe",
+      "cnt": 4306
+    },
+    {
+      "category": "tissue",
+      "label": "soft palate",
+      "cnt": 2601
+    },
+    {
+      "category": "tissue",
+      "label": "tongue",
+      "cnt": 489
+    }
+  ]
+}

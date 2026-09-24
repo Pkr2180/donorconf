@@ -1,0 +1,132 @@
+dataset,scheme,source_label,coarse_label,n_cells
+blood_A,blood_fine,"CD14-low, CD16-positive monocyte",mono_nonclassical,180
+blood_A,blood_fine,CD14-positive monocyte,mono_classical,405
+blood_A,blood_fine,"CD16-negative, CD56-bright natural killer cell, human",NK,66
+blood_A,blood_fine,"CD4-positive, alpha-beta T cell",CD4_T,5
+blood_A,blood_fine,"CD4-positive, alpha-beta cytotoxic T cell",CD4_T,201
+blood_A,blood_fine,"CD8-positive, alpha-beta T cell",CD8_T,3
+blood_A,blood_fine,"central memory CD4-positive, alpha-beta T cell",CD4_T,2808
+blood_A,blood_fine,"central memory CD8-positive, alpha-beta T cell",CD8_T,152
+blood_A,blood_fine,conventional dendritic cell,cDC,54
+blood_A,blood_fine,dendritic cell,<excluded>,2
+blood_A,blood_fine,double negative thymocyte,<excluded>,15
+blood_A,blood_fine,"effector memory CD4-positive, alpha-beta T cell",CD4_T,310
+blood_A,blood_fine,"effector memory CD8-positive, alpha-beta T cell",CD8_T,1782
+blood_A,blood_fine,erythrocyte,<excluded>,2
+blood_A,blood_fine,gamma-delta T cell,<excluded>,198
+blood_A,blood_fine,hematopoietic precursor cell,<excluded>,20
+blood_A,blood_fine,innate lymphoid cell,<excluded>,2
+blood_A,blood_fine,memory B cell,B,264
+blood_A,blood_fine,mucosal invariant T cell,<excluded>,58
+blood_A,blood_fine,naive B cell,B,517
+blood_A,blood_fine,"naive thymus-derived CD4-positive, alpha-beta T cell",CD4_T,2391
+blood_A,blood_fine,"naive thymus-derived CD8-positive, alpha-beta T cell",CD8_T,439
+blood_A,blood_fine,natural killer cell,NK,1624
+blood_A,blood_fine,peripheral blood mononuclear cell,<excluded>,1
+blood_A,blood_fine,plasmablast,<excluded>,33
+blood_A,blood_fine,plasmacytoid dendritic cell,<excluded>,16
+blood_A,blood_fine,platelet,<excluded>,20
+blood_A,blood_fine,regulatory T cell,CD4_T,235
+blood_A,blood_fine,transitional stage B cell,B,197
+blood_B,blood_fine,B cell,B,139
+blood_B,blood_fine,"CD14-low, CD16-positive monocyte",mono_nonclassical,469
+blood_B,blood_fine,CD14-positive monocyte,mono_classical,1749
+blood_B,blood_fine,CD141-positive myeloid dendritic cell,<excluded>,2
+blood_B,blood_fine,"CD16-negative, CD56-bright natural killer cell, human",NK,57
+blood_B,blood_fine,"CD16-positive, CD56-dim natural killer cell, human",NK,1338
+blood_B,blood_fine,CD1c-positive myeloid dendritic cell,cDC,120
+blood_B,blood_fine,"CD4-positive, alpha-beta T cell",CD4_T,357
+blood_B,blood_fine,"CD4-positive, alpha-beta cytotoxic T cell",CD4_T,131
+blood_B,blood_fine,"CD8-positive, alpha-beta T cell",CD8_T,559
+blood_B,blood_fine,"CD8-positive, alpha-beta cytotoxic T cell",CD8_T,462
+blood_B,blood_fine,"CD8-positive, alpha-beta memory T cell",CD8_T,279
+blood_B,blood_fine,T cell,<excluded>,899
+blood_B,blood_fine,"central memory CD4-positive, alpha-beta T cell",CD4_T,1008
+blood_B,blood_fine,double negative T regulatory cell,<excluded>,4
+blood_B,blood_fine,"effector memory CD4-positive, alpha-beta T cell",CD4_T,221
+blood_B,blood_fine,gamma-delta T cell,<excluded>,228
+blood_B,blood_fine,hematopoietic stem cell,<excluded>,1
+blood_B,blood_fine,innate lymphoid cell,<excluded>,7
+blood_B,blood_fine,mature B cell,B,44
+blood_B,blood_fine,memory B cell,B,316
+blood_B,blood_fine,mucosal invariant T cell,<excluded>,182
+blood_B,blood_fine,myeloid cell,<excluded>,312
+blood_B,blood_fine,naive B cell,B,318
+blood_B,blood_fine,"naive thymus-derived CD4-positive, alpha-beta T cell",CD4_T,1291
+blood_B,blood_fine,"naive thymus-derived CD8-positive, alpha-beta T cell",CD8_T,750
+blood_B,blood_fine,natural killer cell,NK,404
+blood_B,blood_fine,plasma cell,<excluded>,10
+blood_B,blood_fine,plasmacytoid dendritic cell,<excluded>,24
+blood_B,blood_fine,platelet,<excluded>,151
+blood_B,blood_fine,pre-conventional dendritic cell,cDC,11
+blood_B,blood_fine,regulatory T cell,CD4_T,157
+blood_C,blood_fine,B cell,B,1492
+blood_C,blood_fine,"CD4-positive, alpha-beta T cell",CD4_T,3474
+blood_C,blood_fine,"CD8-positive, alpha-beta T cell",CD8_T,2240
+blood_C,blood_fine,classical monocyte,mono_classical,3069
+blood_C,blood_fine,conventional dendritic cell,cDC,166
+blood_C,blood_fine,lymphocyte,<excluded>,88
+blood_C,blood_fine,natural killer cell,NK,890
+blood_C,blood_fine,non-classical monocyte,mono_nonclassical,498
+blood_C,blood_fine,plasmablast,<excluded>,15
+blood_C,blood_fine,plasmacytoid dendritic cell,<excluded>,63
+blood_C,blood_fine,progenitor cell,<excluded>,5
+gingiva,oral_coarse,B cell,B,227
+gingiva,oral_coarse,Langerhans cell,myeloid,23
+gingiva,oral_coarse,Merkel cell,<excluded>,2
+gingiva,oral_coarse,Schwann cell,<excluded>,11
+gingiva,oral_coarse,T cell,T,509
+gingiva,oral_coarse,T-helper 17 cell,T,53
+gingiva,oral_coarse,capillary endothelial cell,endothelial,431
+gingiva,oral_coarse,conventional dendritic cell,myeloid,205
+gingiva,oral_coarse,endothelial cell of artery,endothelial,297
+gingiva,oral_coarse,endothelial cell of lymphatic vessel,endothelial,175
+gingiva,oral_coarse,endothelial cell of venule,endothelial,1534
+gingiva,oral_coarse,fibroblast,fibroblast,1398
+gingiva,oral_coarse,gamma-delta T cell,T,123
+gingiva,oral_coarse,helper T cell,T,721
+gingiva,oral_coarse,keratinocyte,epithelial,1339
+gingiva,oral_coarse,macrophage,myeloid,218
+gingiva,oral_coarse,mast cell,mast,407
+gingiva,oral_coarse,mature NK T cell,<excluded>,126
+gingiva,oral_coarse,melanocyte,<excluded>,8
+gingiva,oral_coarse,mucosal invariant T cell,T,144
+gingiva,oral_coarse,natural killer cell,NK,170
+gingiva,oral_coarse,neutrophil,<excluded>,191
+gingiva,oral_coarse,pericyte,mural,376
+gingiva,oral_coarse,plasma cell,plasma,984
+gingiva,oral_coarse,plasmacytoid dendritic cell,<excluded>,35
+gingiva,oral_coarse,regulatory T cell,T,90
+gingiva,oral_coarse,vascular associated smooth muscle cell,mural,403
+oral_normal_multisite,oral_coarse,Schwann cell,<excluded>,311
+oral_normal_multisite,oral_coarse,endothelial cell of vascular tree,endothelial,725
+oral_normal_multisite,oral_coarse,epithelial cell,epithelial,1521
+oral_normal_multisite,oral_coarse,fibroblast,fibroblast,1069
+oral_normal_multisite,oral_coarse,lymphocyte,<excluded>,1265
+oral_normal_multisite,oral_coarse,melanocyte,<excluded>,3
+oral_normal_multisite,oral_coarse,mural cell,mural,468
+oral_normal_multisite,oral_coarse,muscle cell,<excluded>,1
+oral_normal_multisite,oral_coarse,myeloid cell,myeloid,360
+oral_normal_multisite,oral_coarse,odontoblast,<excluded>,8
+oral_scc,oral_coarse,B cell,B,233
+oral_scc,oral_coarse,T cell,T,1345
+oral_scc,oral_coarse,endothelial cell,endothelial,153
+oral_scc,oral_coarse,fibroblast,fibroblast,181
+oral_scc,oral_coarse,mast cell,mast,86
+oral_scc,oral_coarse,myeloid cell,myeloid,410
+oral_scc,oral_coarse,oral mucosa squamous cell,epithelial,1052
+oropharynx,oral_coarse,B cell,B,538
+oropharynx,oral_coarse,"CD4-positive, alpha-beta T cell",T,347
+oropharynx,oral_coarse,"CD8-positive, alpha-beta T cell",T,342
+oropharynx,oral_coarse,endothelial cell,endothelial,74
+oropharynx,oral_coarse,endothelial cell of lymphatic vessel,endothelial,10
+oropharynx,oral_coarse,epithelial cell,epithelial,772
+oropharynx,oral_coarse,fibroblast,fibroblast,121
+oropharynx,oral_coarse,mast cell,mast,16
+oropharynx,oral_coarse,mature alpha-beta T cell,T,8
+oropharynx,oral_coarse,mural cell,mural,67
+oropharynx,oral_coarse,myeloid cell,myeloid,283
+oropharynx,oral_coarse,natural killer cell,NK,40
+oropharynx,oral_coarse,plasma cell,plasma,228
+oropharynx,oral_coarse,plasmacytoid dendritic cell,<excluded>,20
+oropharynx,oral_coarse,regulatory T cell,T,134
