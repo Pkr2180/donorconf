@@ -1,5 +1,14 @@
 # Zenodo DOI — prep and steps
 
+## Status (2026-09-25): repo re-synced with the 5-embedding results — Zenodo connection is what's left
+
+Re-synced 2026-09-25: the release repo was two rounds of results behind (Geneformer/scGPT embeddings for
+all 11 datasets, then the C benchmark re-run across all 5 embeddings). Copied the current working copy
+over again, dropped ephemeral debug logs (raw stdout from the Modal GPU runs — not scientific artifacts)
+via an expanded `.gitignore`, verified 32/32 tests pass independently in the release repo, committed and
+pushed (`bf63d56`). `CITATION.cff` now also has an author email. Everything below still applies — only the
+GitHub OAuth / release-tagging steps remain, and those need your login, not mine.
+
 ## Status (2026-09-24): repo extracted and pushed — Zenodo connection is what's left
 
 The blocker found on 2026-09-22 (`donorconf/` lived inside one large personal monorepo rooted at the
@@ -34,7 +43,8 @@ whole `D:\` drive, no GitHub remote) is resolved:
 > annotations under dataset shift. Includes: donor-level conformal risk control and donor-weighted quantile
 > calibrators; a target-adaptive weighted-CRC remedy using a few labeled target donors; a benchmark of
 > reported-vs-realised coverage across blood (5 datasets) and lung (6 datasets) tissue-shift scenarios on
-> CELLxGENE Census 2025-11-08 data with three hosted embeddings (TF-Sapiens, TF-Exemplar, scVI); a
+> CELLxGENE Census 2025-11-08 data across five embeddings (three Census-hosted: TF-Sapiens, TF-Exemplar,
+> scVI; two foundation-model: Geneformer-V2-104M, scGPT-human); a
 > published-package (torchCP 1.0.2) calibration baseline; 32 passing tests. See `results/real/SUMMARY_FINAL.md`
 > and `manuscript/BiB_SKELETON.md` for the full evidence pack. Exploratory research code — not yet
 > peer-reviewed; see `results/real/ANALYSIS_LOCK.md` for what was pre-declared versus exploratory.
