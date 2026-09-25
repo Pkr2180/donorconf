@@ -1,7 +1,7 @@
 {
   "simulation_only": false,
   "warning": "Simulated data with known ground truth. Not biological evidence.",
-  "utc_time": "2026-09-21T08:54:19Z",
+  "utc_time": "2026-09-25T08:55:17Z",
   "python": "3.12.10",
   "numpy": "2.2.5",
   "config": {
@@ -22,7 +22,9 @@
     "embeddings": [
       "emb_tf-sapiens",
       "emb_tf-exemplar-human",
-      "emb_scvi"
+      "emb_scvi",
+      "emb_geneformer",
+      "emb_scgpt"
     ],
     "name": "c_benchmark_blood_tcp",
     "torchcp": true

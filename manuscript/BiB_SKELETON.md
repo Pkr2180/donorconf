@@ -15,15 +15,15 @@ models, dataset shift, donor-level evaluation, uncertainty calibration.
 **[AUTHOR TO WRITE]** Use the headline facts below.
 
 ### Headline facts (generated)
-- Ordered blood dataset triples: 24; rows 1152
-- Cell-pooled realised coverage 0.876 (target 0.90); reported by random split 0.903
-- |reported - realised| > 0.03 in 47.9% of replications; over-reported 29.2%, under-reported 18.8%
-- Confidence shift vs shortfall, per triple (n=24): Spearman -0.732 (p=0.0000)
-- Permutation screen p-value vs shortfall, per triple: Spearman -0.297 (p=0.159)
-- Published-package torchCP standard-THR cross-check vs this study's pooled-cell coverage: mean absolute difference 0.0000
-- Lung (second tissue; datasets C, E, F, G, H, I; 1152 rows): cell-pooled realised coverage 0.822 vs reported 0.903; |gap| > 0.03 in 71.5% of replications
-- Lung confidence shift vs shortfall, per triple (n=24): Spearman -0.776 (p=0.0000) -- replicates the blood signal (kill rule |Spearman| >= 0.4)
-- Lung donor_crc coverage 0.898, set size 1.266
+- Ordered blood dataset triples: 24; rows 1920
+- Cell-pooled realised coverage 0.870 (target 0.90); reported by random split 0.902
+- |reported - realised| > 0.03 in 56.2% of replications; over-reported 34.2%, under-reported 22.1%
+- Confidence shift vs shortfall, per triple (n=24): Spearman -0.446 (p=0.0289)
+- Permutation screen p-value vs shortfall, per triple: Spearman -0.199 (p=0.351)
+- Published-package torchCP standard-THR cross-check vs this study's pooled-cell coverage: mean absolute difference 0.0001
+- Lung (second tissue; datasets C, E, F, G, H, I; 1920 rows): cell-pooled realised coverage 0.829 vs reported 0.903; |gap| > 0.03 in 72.5% of replications
+- Lung confidence shift vs shortfall, per triple (n=24): Spearman -0.887 (p=0.0000) -- replicates the blood signal (kill rule |Spearman| >= 0.4)
+- Lung donor_crc coverage 0.899, set size 1.340
 
 ## 1 Introduction
 **[AUTHOR TO WRITE]** Per `manuscript/LITERATURE_CHECK.md` (PubMed/Scite/Consensus/bioRxiv connector search run
@@ -64,7 +64,7 @@ and checked by the authors; state this in Methods or Acknowledgements and in the
 
 ## 3 Results
 ### 3.1 Validity checks (simulation, ground truth known)
-See `results/SUMMARY.md`. Software tests: 32 passed, 18 warnings in 35.46s.
+See `results/SUMMARY.md`. Software tests: 32 passed, 22 warnings in 32.47s.
 
 ### 3.2 Within-dataset donor splits (gingiva, 34 donors)
 `results/real/SUMMARY_REAL.md` R1: cell-pooled at nominal; donor CRC over-covers with larger sets. Negative result
@@ -73,14 +73,14 @@ for the exchangeability hypothesis; report it.
 ### 3.3 Coverage under dataset shift (C) -- blood, 5 datasets, with published-package baselines
 | method | coverage | sd | set_size | p_fail5 |
 |---|---|---|---|---|
-| cell_pooled | 0.876 | 0.088 | 1.006 | 0.188 |
-| classwise | 0.832 | 0.123 | 1.016 | 0.299 |
-| donor_crc | 0.915 | 0.058 | 1.117 | 0.097 |
-| donor_weighted | 0.877 | 0.088 | 1.008 | 0.174 |
-| tcp_classwise_thr | 0.835 | 0.119 | 1.027 | 0.285 |
-| tcp_cluster_thr | 0.843 | 0.110 | 1.139 | 0.312 |
-| tcp_standard_aps | 0.893 | 0.044 | 1.130 | 0.139 |
-| tcp_standard_thr | 0.876 | 0.088 | 1.006 | 0.188 |
+| cell_pooled | 0.870 | 0.094 | 1.097 | 0.246 |
+| classwise | 0.821 | 0.120 | 1.050 | 0.388 |
+| donor_crc | 0.906 | 0.075 | 1.217 | 0.158 |
+| donor_weighted | 0.871 | 0.094 | 1.098 | 0.237 |
+| tcp_classwise_thr | 0.823 | 0.118 | 1.063 | 0.375 |
+| tcp_cluster_thr | 0.833 | 0.111 | 1.182 | 0.396 |
+| tcp_standard_aps | 0.887 | 0.064 | 1.229 | 0.183 |
+| tcp_standard_thr | 0.870 | 0.094 | 1.115 | 0.246 |
 
 Figure 1 `figures/fig1_reported_vs_realised.png`. Figure 3 `figures/fig3_coverage_vs_size.png`.
 tcp_standard_thr is numerically identical to this study's cell_pooled method (cross-check in Headline facts);
@@ -91,14 +91,14 @@ smaller mean set size.
 ### 3.3b Second tissue: lung (6 datasets, replication check)
 | method | coverage | sd | set_size | p_fail5 |
 |---|---|---|---|---|
-| cell_pooled | 0.822 | 0.172 | 1.079 | 0.382 |
-| classwise | 0.784 | 0.175 | 1.012 | 0.542 |
-| donor_crc | 0.898 | 0.116 | 1.266 | 0.215 |
-| donor_weighted | 0.837 | 0.163 | 1.115 | 0.368 |
-| tcp_classwise_thr | 0.788 | 0.167 | 1.044 | 0.542 |
-| tcp_cluster_thr | 0.898 | 0.166 | 2.261 | 0.208 |
-| tcp_standard_aps | 0.890 | 0.046 | 1.237 | 0.125 |
-| tcp_standard_thr | 0.823 | 0.169 | 1.080 | 0.382 |
+| cell_pooled | 0.829 | 0.162 | 1.153 | 0.379 |
+| classwise | 0.788 | 0.172 | 1.044 | 0.525 |
+| donor_crc | 0.899 | 0.111 | 1.340 | 0.200 |
+| donor_weighted | 0.842 | 0.153 | 1.184 | 0.354 |
+| tcp_classwise_thr | 0.792 | 0.167 | 1.072 | 0.525 |
+| tcp_cluster_thr | 0.906 | 0.147 | 2.279 | 0.200 |
+| tcp_standard_aps | 0.888 | 0.059 | 1.295 | 0.133 |
+| tcp_standard_thr | 0.832 | 0.161 | 1.162 | 0.375 |
 
 Lung replicates the blood direction and, if anything, the gap is larger in lung (see Headline facts): reported
 coverage over-states realised coverage by more under lung dataset shift than under blood dataset shift. donor_crc

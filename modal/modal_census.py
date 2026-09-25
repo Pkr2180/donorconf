@@ -244,3 +244,94 @@ def pull_main(dataset_id: str, tag: str, max_cells_per_donor: int = 300, max_don
     os.makedirs("../results/real/meta", exist_ok=True)
     json.dump(meta, open(f"../results/real/meta/{tag}.json", "w"), indent=2)
     print(json.dumps(meta, indent=2))
+
+
+@app.function(image=image, timeout=7200, memory=32768, volumes={VOL: vol})
+def pull_raw(dataset_id: str, tag: str, max_cells_per_donor: int = 300, max_donors: int = 0,
+             seed: int = 0, census_version: str = "2025-11-08", tissue_general: str = "") -> dict:
+    """Same cell subsample as `pull()` (identical rng/seed/order), plus full raw gene counts.
+
+    Added 2026-09-24 for Geneformer/scGPT embedding extraction (not Census-hosted, need raw counts).
+    Writes `{tag}.npz` (identical schema to `pull()`, for the existing benchmark pipeline) AND
+    `{tag}_raw.npz` (sparse raw counts + var, GPU-embedding input only, not copied to results/).
+    The two calls MUST select the same cells: this reuses pull()'s exact subsampling code path.
+    """
+    import numpy as np
+    import pandas as pd
+    import scipy.sparse as sp
+    import cellxgene_census as cc
+
+    rng = np.random.default_rng(seed)
+    with cc.open_soma(census_version=census_version) as census:
+        obs = census["census_data"]["homo_sapiens"].obs
+        vf = f"is_primary_data == True and dataset_id == '{dataset_id}'"
+        if tissue_general:
+            vf += f" and tissue_general == '{tissue_general}'"
+        df = obs.read(value_filter=vf, column_names=OBS_COLS).concat().to_pandas()
+        n_total, n_donors_total = len(df), df.donor_id.astype(str).nunique()
+        for c in OBS_COLS[1:]:
+            df[c] = df[c].astype(str)
+        donors = np.array(sorted(df.donor_id.unique()))
+        if max_donors and donors.size > max_donors:
+            donors = rng.choice(donors, size=max_donors, replace=False)
+        parts = []
+        for d in donors:
+            g = df[df.donor_id == d]
+            parts.append(g if len(g) <= max_cells_per_donor else g.sample(max_cells_per_donor, random_state=int(rng.integers(1e9))))
+        sub = pd.concat(parts).sort_values("soma_joinid").reset_index(drop=True)
+        # Same cell set as pull(); additionally fetch the full gene panel's raw counts (no var_value_filter).
+        ad = cc.get_anndata(census, organism="Homo sapiens", obs_coords=sub.soma_joinid.to_numpy(),
+                            obs_embeddings=EMBEDDINGS, column_names={"obs": ["soma_joinid"]})
+    emb = {}
+    ok = np.ones(ad.n_obs, bool)
+    for e in EMBEDDINGS:
+        M = np.asarray(ad.obsm[e], dtype=np.float32)
+        emb[e] = M
+        ok &= np.isfinite(M).all(axis=1)
+    order = pd.Series(np.arange(ad.n_obs), index=ad.obs["soma_joinid"].to_numpy())
+    idx = order.loc[sub.soma_joinid.to_numpy()].to_numpy()
+    sub = sub.assign(_ok=ok[idx])
+    keep = sub._ok.to_numpy()
+
+    # Existing-schema npz (unchanged from pull()) so experiments/* keep working without modification.
+    out = {f"emb_{e}": emb[e][idx][keep] for e in EMBEDDINGS}
+    out.update(labels=sub.cell_type.to_numpy()[keep].astype(str),
+               donors=(dataset_id[:8] + "::" + sub.donor_id).to_numpy()[keep].astype(str),
+               disease=sub.disease.to_numpy()[keep].astype(str),
+               tissue=sub.tissue.to_numpy()[keep].astype(str),
+               sex=sub.sex.to_numpy()[keep].astype(str))
+    np.savez_compressed(f"{VOL}/{tag}.npz", **out)
+
+    # Raw-counts bundle (GPU embedding input only): same row order/filter as `out` above.
+    X = ad.X[idx][keep]
+    X = sp.csr_matrix(X) if not sp.issparse(X) else X.tocsr()
+    var_feature_id = ad.var["feature_id"].to_numpy().astype(str) if "feature_id" in ad.var.columns else ad.var_names.to_numpy().astype(str)
+    var_feature_name = ad.var["feature_name"].to_numpy().astype(str) if "feature_name" in ad.var.columns else var_feature_id
+    raw_out = dict(X_data=X.data.astype(np.float32), X_indices=X.indices, X_indptr=X.indptr, X_shape=np.array(X.shape),
+                   var_feature_id=var_feature_id, var_feature_name=var_feature_name,
+                   cell_id=sub.soma_joinid.to_numpy()[keep].astype(str),
+                   labels=out["labels"], donors=out["donors"])
+    np.savez_compressed(f"{VOL}/{tag}_raw.npz", **raw_out)
+    vol.commit()
+
+    meta = {"tag": tag, "dataset_id": dataset_id, "census_version": census_version, "seed": seed,
+            "n_cells_in_dataset": int(n_total), "n_donors_in_dataset": int(n_donors_total),
+            "n_donors_kept": int(np.unique(out["donors"]).size), "n_cells_kept": int(keep.sum()),
+            "n_cells_dropped_missing_embedding": int((~keep).sum()),
+            "max_cells_per_donor": max_cells_per_donor,
+            "embedding_dims": {e: int(emb[e].shape[1]) for e in EMBEDDINGS},
+            "n_genes_raw": int(X.shape[1]),
+            "n_cell_types": int(np.unique(out["labels"]).size), "tissue_general_filter": tissue_general}
+    open(f"{VOL}/{tag}.meta.json", "w").write(json.dumps(meta, indent=2))
+    vol.commit()
+    return meta
+
+
+@app.local_entrypoint()
+def pull_raw_main(dataset_id: str, tag: str, max_cells_per_donor: int = 300, max_donors: int = 0, seed: int = 0,
+                   tissue_general: str = ""):
+    import os
+    meta = pull_raw.remote(dataset_id, tag, max_cells_per_donor, max_donors, seed, tissue_general=tissue_general)
+    os.makedirs("../results/real/meta", exist_ok=True)
+    json.dump(meta, open(f"../results/real/meta/{tag}.json", "w"), indent=2)
+    print(json.dumps(meta, indent=2))

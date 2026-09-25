@@ -9,10 +9,14 @@ from scipy import stats
 
 R = Path(__file__).resolve().parents[1] / "results" / "real"
 FIG = R / "figures"
-EMB = {"emb_tf-sapiens": "TF-Sapiens", "emb_tf-exemplar-human": "TF-Exemplar", "emb_scvi": "scVI"}
+EMB = {"emb_tf-sapiens": "TF-Sapiens", "emb_tf-exemplar-human": "TF-Exemplar", "emb_scvi": "scVI",
+       "emb_geneformer": "Geneformer", "emb_scgpt": "scGPT"}
 INK, MUTED = "#0b0b0b", "#52514e"
-PAL = {"TF-Sapiens": "#2a78d6", "TF-Exemplar": "#eb6834", "scVI": "#1baf7a"}   # validated slots 1-3, all-pairs
-MARK = {"TF-Sapiens": "o", "TF-Exemplar": "s", "scVI": "^"}                     # secondary encoding (contrast relief)
+# validated slots 1-5 (node scripts/validate_palette.js on this exact 5-color set: all PASS, contrast
+# WARN on 3 of 5 -- satisfied by the existing marker+legend secondary encoding below)
+PAL = {"TF-Sapiens": "#2a78d6", "TF-Exemplar": "#eb6834", "scVI": "#1baf7a",
+       "Geneformer": "#eda100", "scGPT": "#e87ba4"}
+MARK = {"TF-Sapiens": "o", "TF-Exemplar": "s", "scVI": "^", "Geneformer": "D", "scGPT": "v"}
 
 
 def md(df: pd.DataFrame, nd: int = 3) -> str:

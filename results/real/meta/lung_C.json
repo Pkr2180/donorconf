@@ -14,5 +14,7 @@
     "tf-exemplar-human": 2048,
     "scvi": 50
   },
-  "n_cell_types": 40
+  "n_genes_raw": 61497,
+  "n_cell_types": 40,
+  "tissue_general_filter": ""
 }

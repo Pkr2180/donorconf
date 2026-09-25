@@ -3,23 +3,31 @@
 **Exploratory** (`ANALYSIS_LOCK.md` Addendum C). tcp_* rows are the torchCP 1.0.2 predictors used by the conformalized single-cell annotator (Bioinformatics 2025, btaf521) on this study's head and splits; the annotator's OOD detector and neural classifier are not included. Embeddings are Census-hosted and probably saw these cells.
 
 ## Blood (5 datasets, 24 triples) with published-package baselines
-Rows 1152; triples 24; target coverage 0.90.
+Rows 1920; triples 24; target coverage 0.90.
 
 ### Methods (mean over triples, replications, embeddings)
 | method | reps | coverage | cov_sd | set_size | p_fail5 | frac_poor_donors |
 |---|---|---|---|---|---|---|
-| cell_pooled | 144 | 0.876 | 0.088 | 1.006 | 0.188 | 0.168 |
-| classwise | 144 | 0.832 | 0.123 | 1.016 | 0.299 | 0.258 |
-| donor_crc | 144 | 0.915 | 0.058 | 1.117 | 0.097 | 0.090 |
-| donor_weighted | 144 | 0.877 | 0.088 | 1.008 | 0.174 | 0.163 |
-| tcp_classwise_thr | 144 | 0.835 | 0.119 | 1.027 | 0.285 | 0.253 |
-| tcp_cluster_thr | 144 | 0.843 | 0.110 | 1.139 | 0.312 | 0.238 |
-| tcp_standard_aps | 144 | 0.893 | 0.044 | 1.130 | 0.139 | 0.079 |
-| tcp_standard_thr | 144 | 0.876 | 0.088 | 1.006 | 0.188 | 0.168 |
+| cell_pooled | 240 | 0.870 | 0.094 | 1.097 | 0.246 | 0.198 |
+| classwise | 240 | 0.821 | 0.120 | 1.050 | 0.388 | 0.303 |
+| donor_crc | 240 | 0.906 | 0.075 | 1.217 | 0.158 | 0.121 |
+| donor_weighted | 240 | 0.871 | 0.094 | 1.098 | 0.237 | 0.194 |
+| tcp_classwise_thr | 240 | 0.823 | 0.118 | 1.063 | 0.375 | 0.299 |
+| tcp_cluster_thr | 240 | 0.833 | 0.111 | 1.182 | 0.396 | 0.282 |
+| tcp_standard_aps | 240 | 0.887 | 0.064 | 1.229 | 0.183 | 0.114 |
+| tcp_standard_thr | 240 | 0.870 | 0.094 | 1.115 | 0.246 | 0.198 |
 
 ### By embedding (coverage / set size)
 | emb | method | coverage | set_size | p_fail5 |
 |---|---|---|---|---|
+| Geneformer | cell_pooled | 0.840 | 1.315 | 0.375 |
+| Geneformer | classwise | 0.793 | 1.062 | 0.521 |
+| Geneformer | donor_crc | 0.870 | 1.444 | 0.354 |
+| Geneformer | donor_weighted | 0.840 | 1.315 | 0.375 |
+| Geneformer | tcp_classwise_thr | 0.794 | 1.091 | 0.521 |
+| Geneformer | tcp_cluster_thr | 0.804 | 1.231 | 0.500 |
+| Geneformer | tcp_standard_aps | 0.859 | 1.504 | 0.333 |
+| Geneformer | tcp_standard_thr | 0.841 | 1.407 | 0.375 |
 | TF-Exemplar | cell_pooled | 0.886 | 1.099 | 0.188 |
 | TF-Exemplar | classwise | 0.808 | 1.076 | 0.438 |
 | TF-Exemplar | donor_crc | 0.918 | 1.244 | 0.083 |
@@ -36,6 +44,14 @@ Rows 1152; triples 24; target coverage 0.90.
 | TF-Sapiens | tcp_cluster_thr | 0.827 | 1.109 | 0.375 |
 | TF-Sapiens | tcp_standard_aps | 0.890 | 1.117 | 0.208 |
 | TF-Sapiens | tcp_standard_thr | 0.849 | 0.958 | 0.333 |
+| scGPT | cell_pooled | 0.884 | 1.152 | 0.292 |
+| scGPT | classwise | 0.815 | 1.137 | 0.521 |
+| scGPT | donor_crc | 0.914 | 1.293 | 0.146 |
+| scGPT | donor_weighted | 0.884 | 1.153 | 0.292 |
+| scGPT | tcp_classwise_thr | 0.817 | 1.142 | 0.500 |
+| scGPT | tcp_cluster_thr | 0.830 | 1.261 | 0.542 |
+| scGPT | tcp_standard_aps | 0.896 | 1.253 | 0.167 |
+| scGPT | tcp_standard_thr | 0.884 | 1.152 | 0.292 |
 | scVI | cell_pooled | 0.892 | 0.960 | 0.042 |
 | scVI | classwise | 0.876 | 0.986 | 0.104 |
 | scVI | donor_crc | 0.926 | 1.026 | 0.000 |
@@ -46,36 +62,44 @@ Rows 1152; triples 24; target coverage 0.90.
 | scVI | tcp_standard_thr | 0.892 | 0.960 | 0.042 |
 
 ### Reported vs realised (cell_pooled)
-reported 0.903 vs realised 0.876; |gap| > 0.03 in 47.9% of replications (over-reported 29.2%, under-reported 18.8%)
+reported 0.902 vs realised 0.870; |gap| > 0.03 in 56.2% of replications (over-reported 34.2%, under-reported 22.1%)
 
 ### Label-free signals vs shortfall (per triple; kill rule |Spearman| >= 0.4)
 | signal | spearman_per_triple | p_value | n |
 |---|---|---|---|
-| conf_shift | -0.732 | 0.000 | 24 |
-| entropy_shift | 0.730 | 0.000 | 24 |
-| screen_p | -0.297 | 0.159 | 24 |
-| head_accuracy_calibration | 0.614 | 0.001 | 24 |
+| conf_shift | -0.446 | 0.029 | 24 |
+| entropy_shift | 0.451 | 0.027 | 24 |
+| screen_p | -0.199 | 0.351 | 24 |
+| head_accuracy_calibration | 0.522 | 0.009 | 24 |
 
-Cross-check: torchCP standard-THR vs this package's pooled-cell coverage, mean absolute difference 0.0000 over 144 runs.
+Cross-check: torchCP standard-THR vs this package's pooled-cell coverage, mean absolute difference 0.0001 over 240 runs.
 
 ## Lung (6 datasets: C, E, F, G, H, I), second tissue
-Rows 1152; triples 24; target coverage 0.90.
+Rows 1920; triples 24; target coverage 0.90.
 
 ### Methods (mean over triples, replications, embeddings)
 | method | reps | coverage | cov_sd | set_size | p_fail5 | frac_poor_donors |
 |---|---|---|---|---|---|---|
-| cell_pooled | 144 | 0.822 | 0.172 | 1.079 | 0.382 | 0.286 |
-| classwise | 144 | 0.784 | 0.175 | 1.012 | 0.542 | 0.374 |
-| donor_crc | 144 | 0.898 | 0.116 | 1.266 | 0.215 | 0.138 |
-| donor_weighted | 144 | 0.837 | 0.163 | 1.115 | 0.368 | 0.258 |
-| tcp_classwise_thr | 144 | 0.788 | 0.167 | 1.044 | 0.542 | 0.370 |
-| tcp_cluster_thr | 144 | 0.898 | 0.166 | 2.261 | 0.208 | 0.143 |
-| tcp_standard_aps | 144 | 0.890 | 0.046 | 1.237 | 0.125 | 0.100 |
-| tcp_standard_thr | 144 | 0.823 | 0.169 | 1.080 | 0.382 | 0.284 |
+| cell_pooled | 240 | 0.829 | 0.162 | 1.153 | 0.379 | 0.281 |
+| classwise | 240 | 0.788 | 0.172 | 1.044 | 0.525 | 0.370 |
+| donor_crc | 240 | 0.899 | 0.111 | 1.340 | 0.200 | 0.144 |
+| donor_weighted | 240 | 0.842 | 0.153 | 1.184 | 0.354 | 0.257 |
+| tcp_classwise_thr | 240 | 0.792 | 0.167 | 1.072 | 0.525 | 0.365 |
+| tcp_cluster_thr | 240 | 0.906 | 0.147 | 2.279 | 0.200 | 0.136 |
+| tcp_standard_aps | 240 | 0.888 | 0.059 | 1.295 | 0.133 | 0.107 |
+| tcp_standard_thr | 240 | 0.832 | 0.161 | 1.162 | 0.375 | 0.278 |
 
 ### By embedding (coverage / set size)
 | emb | method | coverage | set_size | p_fail5 |
 |---|---|---|---|---|
+| Geneformer | cell_pooled | 0.823 | 1.481 | 0.438 |
+| Geneformer | classwise | 0.770 | 1.085 | 0.542 |
+| Geneformer | donor_crc | 0.885 | 1.693 | 0.250 |
+| Geneformer | donor_weighted | 0.839 | 1.529 | 0.375 |
+| Geneformer | tcp_classwise_thr | 0.775 | 1.122 | 0.542 |
+| Geneformer | tcp_cluster_thr | 0.904 | 2.325 | 0.271 |
+| Geneformer | tcp_standard_aps | 0.876 | 1.618 | 0.208 |
+| Geneformer | tcp_standard_thr | 0.830 | 1.520 | 0.417 |
 | TF-Exemplar | cell_pooled | 0.802 | 1.153 | 0.458 |
 | TF-Exemplar | classwise | 0.769 | 1.048 | 0.542 |
 | TF-Exemplar | donor_crc | 0.883 | 1.354 | 0.271 |
@@ -92,6 +116,14 @@ Rows 1152; triples 24; target coverage 0.90.
 | TF-Sapiens | tcp_cluster_thr | 0.895 | 2.274 | 0.167 |
 | TF-Sapiens | tcp_standard_aps | 0.889 | 1.297 | 0.146 |
 | TF-Sapiens | tcp_standard_thr | 0.801 | 1.120 | 0.333 |
+| scGPT | cell_pooled | 0.859 | 1.048 | 0.312 |
+| scGPT | classwise | 0.820 | 1.097 | 0.458 |
+| scGPT | donor_crc | 0.918 | 1.209 | 0.104 |
+| scGPT | donor_weighted | 0.863 | 1.047 | 0.292 |
+| scGPT | tcp_classwise_thr | 0.820 | 1.104 | 0.458 |
+| scGPT | tcp_cluster_thr | 0.933 | 2.284 | 0.104 |
+| scGPT | tcp_standard_aps | 0.895 | 1.147 | 0.083 |
+| scGPT | tcp_standard_thr | 0.859 | 1.048 | 0.312 |
 | scVI | cell_pooled | 0.862 | 0.963 | 0.354 |
 | scVI | classwise | 0.816 | 0.941 | 0.562 |
 | scVI | donor_crc | 0.918 | 1.096 | 0.167 |
@@ -102,14 +134,14 @@ Rows 1152; triples 24; target coverage 0.90.
 | scVI | tcp_standard_thr | 0.862 | 0.963 | 0.354 |
 
 ### Reported vs realised (cell_pooled)
-reported 0.903 vs realised 0.822; |gap| > 0.03 in 71.5% of replications (over-reported 47.2%, under-reported 24.3%)
+reported 0.903 vs realised 0.829; |gap| > 0.03 in 72.5% of replications (over-reported 45.0%, under-reported 27.5%)
 
 ### Label-free signals vs shortfall (per triple; kill rule |Spearman| >= 0.4)
 | signal | spearman_per_triple | p_value | n |
 |---|---|---|---|
-| conf_shift | -0.776 | 0.000 | 24 |
-| entropy_shift | 0.788 | 0.000 | 24 |
-| screen_p | 0.106 | 0.622 | 24 |
-| head_accuracy_calibration | 0.354 | 0.090 | 24 |
+| conf_shift | -0.887 | 0.000 | 24 |
+| entropy_shift | 0.891 | 0.000 | 24 |
+| screen_p | 0.022 | 0.918 | 24 |
+| head_accuracy_calibration | 0.321 | 0.126 | 24 |
 
-Cross-check: torchCP standard-THR vs this package's pooled-cell coverage, mean absolute difference 0.0013 over 144 runs.
+Cross-check: torchCP standard-THR vs this package's pooled-cell coverage, mean absolute difference 0.0021 over 240 runs.

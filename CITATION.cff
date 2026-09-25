@@ -8,6 +8,7 @@ authors:
   - family-names: Kumar
     given-names: Pradeep
     orcid: "https://orcid.org/0000-0002-6653-4123"
+    email: pradeepkumar.sdc@saveetrha.com
 repository-code: "https://github.com/Pkr2180/donorconf"
 keywords:
   - conformal prediction

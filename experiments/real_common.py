@@ -13,7 +13,7 @@ from donorconf.metrics import coverage_summary
 from donorconf.shift import donor_summaries, shift_screen
 
 DATA = ROOT / "results" / "real" / "data"
-EMBEDDINGS = ("emb_tf-sapiens", "emb_tf-exemplar-human", "emb_scvi")
+EMBEDDINGS = ("emb_tf-sapiens", "emb_tf-exemplar-human", "emb_scvi", "emb_geneformer", "emb_scgpt")
 
 
 def load(tag: str) -> dict:

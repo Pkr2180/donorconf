@@ -3,3 +3,5 @@ __pycache__/
 .pytest_cache/
 results/real/data/*.npz
 .DS_Store
+results/real/meta/*.log
+results/real/meta/fm_pipeline_status.tsv
